@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My NFTs | ajax.loopring.eth</title>
+		
+		<style>
+			html, body{
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				background: #f0f0f0;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			
+			table, table tr, ul, h2{
+				padding: 0;
+				margin: 0;
+			}
+			
+			li{
+				padding: 0;
+				margin: 0 0 0 25px;
+			}
+			
+			hr{
+				border-color: #eee;
+				padding: 0;
+				margin: 35px 0;
+			}
+			
+			h2{
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			
+			table{
+				padding: 0 15px;
+				margin: 0 auto;
+				border-collapse: collapse;
+				background: #fff;
+			}
+			
+			table th{
+				background: #d5e09f;
+			}
+			
+			table th, table td{
+				text-align: center;
+				border: 1px solid #94a164;
+				padding: 10px;
+				margin: 0;
+			}
+			
+			table td img{
+				max-width: 100px;
+			}
+			
+			table td.alignLeft{
+				text-align: left;
+			}
+			
+			table td.smallText{
+				font-size: 10px;
+			}
+			
+			.small_link{
+				text-align: center;
+				font-size: 13px;
+				margin-bottom: 15px;
+			}
+			
+			#wrapper{
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h2>isepic-chess-font NFTs collection:</h2>
+			<div class="small_link">Google form: <a href="https://docs.google.com/forms/d/e/1FAIpQLScx8QOxIkcoqmmST2MnREFqvjhxvqQ_i5pdnZv6Kb0rnFrELg/viewform">https://docs.google.com/forms/d/e/1FAIpQLScx8QOxIkcoqmmST2MnREFqvjhxvqQ_i5pdnZv6Kb0rnFrELg/viewform</a></div>
+			<div id="nft_1">...</div>
+			
+			<hr>
+			
+			<h2>Sk8er cats NFTs collection:</h2>
+			<div class="small_link">Google form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEVwmC81_QNoicJNJ5Vi-ziyKIPifL5UQz1vzGavqVdDGPYw/viewform">https://docs.google.com/forms/d/e/1FAIpQLSdEVwmC81_QNoicJNJ5Vi-ziyKIPifL5UQz1vzGavqVdDGPYw/viewform</a></div>
+			<div id="nft_2">...</div>
+			
+			<hr>
+			
+			<h2>other NFTs:</h2>
+			<div id="nft_3">...</div>
+		<div>
+		
+		<script>
+			var other_nfts, chess_font, sk8er_cats, my_address, contract_address;
+			
+			other_nfts=[{
+				id: "0x7989f604447d621bb79e64feb98ba64ce03a47dd174be6892ef1081c24b86d61",
+				dir: "QmQYzWc3y6xcrdivJy3Eoip5yQn7HZcptH4zB6vwqSGm9m",
+				json: "QmWX647BFyJu4UY9cWHvw5srbtKQTqV5PuG5eCVBNx88w2",
+				name: "ajax333221",
+				file: "avatar.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xdc458a3206f3063b09036560ad45628105b0f60eb9731179fa67892c2606b08b",
+				dir: "QmadEnZ1rPZFqCmAEXQ65Ckxe7fDX52PdoX5vUmTeHdFk4",
+				json: "QmdAVuQiohXsyRS2drxV4orWdDGRdD8sz6Bt5UzwyRhXMC",
+				name: "Looprix",
+				file: "matrix.png",
+				pinata: true,
+				minted: 5
+			}, {
+				id: "0x6e1680cf85a1191bcc5acb09522b5e643f25b7ccbb597bacaac9d91a12d207dd",
+				dir: "QmXG2yfD3fc2qHv4uE7ioxyHV1S4Rk2KE8PdfYLVkCWFNb",
+				json: "QmVkPTXfAJhc2n3V35rZHsTToaY7qm8rE8dLigaU4pcR9e",
+				name: "Looptal",
+				file: "looptal.gif",
+				pinata: true,
+				minted: 3
+			}];
+			
+			chess_font=[{
+				id: "0x121061f5bf829aa4e002e5cc3353bd19bf5485e51033bbf1ece8b5764a390642",
+				dir: "QmQaqBdh2toxW44VgN5RoHJ34U3EG7vh9QwceCqrwNt1Bo",
+				json: "QmPZAY6j74U4BQagiGXh6soE8uUT3HHhozDwSWNYwaPTPX",
+				name: "Pawn (white)",
+				file: "wp.png",
+				pinata: true,
+				minted: 35
+			}, {
+				id: "0xc50895812df6af670a6806a564eff8f0f181a2652a8556703bb43cd030ed7647",
+				dir: "QmZMnw8oBg37RGejmbxhfndEibcvwJaCw3gVcmTMK8fFcf",
+				json: "QmbbncnJaKq4ZpbiiTezcseYCLZBK7VEaqb4JWiz3utbhx",
+				name: "Pawn (black)",
+				file: "bp.png",
+				pinata: true,
+				minted: 35
+			}, {
+				id: "0x10018da0e277bee202c2d174cbcceebb3bff1d4e6548ca283b64b2f49979ef30",
+				dir: "QmUCkr6KLpYCtWBADviasZaoqWde8U1B5kWwGX4vcuHyur",
+				json: "QmPR8c89zTG5bdtgrKqaDSv9twTe8Sc2dkDJZ8jMKgvEVD",
+				name: "Knight (white)",
+				file: "wn.png",
+				pinata: true,
+				minted: 20
+			}, {
+				id: "0x41f35f40efa2a1490c30e815cb853630c7284bfae5d5f4ec23effd84e5ec5243",
+				dir: "QmXG6xzbpZBgcR975hzeNLCkquM91jw6jfBonx9MqAhNur",
+				json: "QmSn6T22XUHHxuWriLtMx3cb96pLXfA8Y45ztSvjXG4UUr",
+				name: "Knight (black)",
+				file: "bn.png",
+				pinata: true,
+				minted: 20
+			}, {
+				id: "0x907fe812a1066a7d289825e88b950bcf809342dbbae7ea9c6761d48aba37a483",
+				dir: "Qmerev78DPLdTyrscztuyxyPhMhnyDFQee1j2U5B9X1gGf",
+				json: "QmY4iYE8aHu5oDWLYCudnLbaPp6u38sCwWcSPcuZk2nmQe",
+				name: "Bishop (white)",
+				file: "wb.png",
+				pinata: true,
+				minted: 20
+			}, {
+				id: "0x7b315994ea0e963391a5820e6bedf7f82fd07e8183b96fe7b866a3a5bab09f80",
+				dir: "QmToKFC8RhtoBbZkEdYStaRVzW9XzxfkKXruHHLSCCKTVc",
+				json: "QmWdYW3wGdcXStGpmXMvjGsnBt9C9MMSimJYoY8pb2NMg3",
+				name: "Bishop (black)",
+				file: "bb.png",
+				pinata: true,
+				minted: 20
+			}, {
+				id: "0x4a0f5385e138796111bc913a5f5b2ce29f9c5ae7abe89092884e02ab017b1687",
+				dir: "QmNkVz7vz9CmH8cwAEs2tbkTf97WgF5PTUnwgcuWafDQRb",
+				json: "QmTKkS7YNnSo1JyNUUZo2G9d8ZGm3waQRRnmYLrfz2DawQ",
+				name: "Rook (white)",
+				file: "wr.png",
+				pinata: true,
+				minted: 15
+			}, {
+				id: "0x2406589c0220db2bd9fde79fd45d3a79d537ca1c60529098f4c0a3a320d73793",
+				dir: "QmQhkCmzcUHV94Naw1emUNu3eLhMtnTPpvBmqbr6bmF8Yn",
+				json: "QmQmGzuaxzFY44ANnW6iiM7KyRTjfzcYDBMB2jTdB1jCUS",
+				name: "Rook (black)",
+				file: "br.png",
+				pinata: true,
+				minted: 15
+			}, {
+				id: "0xc7b51063a3cdcdb0d02843871b7eb75e8e37dbde67a7da6568a96ef331699370",
+				dir: "QmW5obK5E4zydNmpYth1kaBXDZ8Z71a2o1RAzGiAtr1PHK",
+				json: "QmbnDyXGCbWXvtvxpkJvnwPHv6SoWd438enjLY5tFFUnVm",
+				name: "Queen (white)",
+				file: "wq.png",
+				pinata: true,
+				minted: 10
+			}, {
+				id: "0xd66bfdb80a663e83e7c0fb9684c01001fd94a93f5d951d06b3068a45f2cf9aae",
+				dir: "QmbTY7U4kky4WL2EynHFR2iFSXD5uLvbXkFKNDzHFXBgqg",
+				json: "QmcmfTubDLHr9FBG7MRPxiR3i1D9ZESSHjTTaPrzVn8u1w",
+				name: "Queen (black)",
+				file: "bq.png",
+				pinata: true,
+				minted: 10
+			}, {
+				id: "0x3b87607ab9210c2182b4496800f9061fca4766ab892494391751a7ab2d2d8a2c",
+				dir: "QmdrQAss19VRt47pEdSpMJN5jpNCHVKJpgSqzwuSTbMkdP",
+				json: "QmSM2VUKrh349Vn3t4EnmvFWVmNev8GkQSmLe9rCyQjMK9",
+				name: "King (white)",
+				file: "wk.png",
+				pinata: true,
+				minted: 5
+			}, {
+				id: "0xc62f4840d0da5b8a913eba89ca848f925ecef14bd1e2e5111de2277089a927ce",
+				dir: "QmVSzgcViBP9fitHXUyq5ryLVf3poBKdZvMGA3G7Adbojd",
+				json: "QmbgHFUREsiJG2RU7aYVE6ZmvGuB5Xh8C6QH8kH3RfArH3",
+				name: "King (black)",
+				file: "bk.png",
+				pinata: true,
+				minted: 5
+			}];
+			
+			sk8er_cats=[{
+				id: "0x23c26e59554e220f2ee6d717b3164a73adb650d7e43fffbd60e326f5379ed0b4",
+				dir: "QmaNn98cYF63YJkiWiMdU5MmkjJbYoNekpYZVYbmJahhet",
+				json: "QmQkEwAomQwVdUGZPtPEvuXpz6A25XV9KVA89X8gqc8jrj",
+				name: "Sk8er cat #1",
+				file: "sk8er_cat_01.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xfa46fc629eaa29c2d2b4663a7e0ceb52326e741ad463d93fcc766cf532c4e155",
+				dir: "QmQD8U4XfLkUsizCAUTubTrqH5whdQRVE1rZaUQesaA4zM",
+				json: "QmfBdQynpBsscyrvT3yR6bn4wGg2Lhy8c5jFq6uM48S1r4",
+				name: "Sk8er cat #2",
+				file: "sk8er_cat_02.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xf76f3dc98fe27cdc12e8b1cae551e371205da4d6b6b94aacecdda5fef3c01333",
+				dir: "QmUvGzpRbk8HxgA9Wa1ohLw6H5EB9QwFhPxYMr2UPB9AWr",
+				json: "QmezXnxvvovCxSS9FaRJgSXgqLdjXgMYUqRfNwnvSJiugv",
+				name: "Sk8er cat #3",
+				file: "sk8er_cat_03.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x1b56b9728194e6b6a6457a999629e19d4032bfcff404c0c6dffd5a722947aa57",
+				dir: "QmRck2BXf64QHrZKgzgA85QPyBXpJNYbxJNB9xWCnLWnLd",
+				json: "QmQBNR8dqCcJwML49opLkfxZcqr9wLje17RFo11WDpw1FC",
+				name: "Sk8er cat #4",
+				file: "sk8er_cat_04.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x2566b71536ac5a62b42a64247cc7b3569634146a243728391e72fb7d04913a47",
+				dir: "QmcUYqcYwmvENzVrf3HvRxd5KusnGCRAPREod5WuKpYeg6",
+				json: "QmQredrL1L5EVqDpwD8XKnV7vLPC1YL4QzGBvf2yRP1jsk",
+				name: "Sk8er cat #5",
+				file: "sk8er_cat_05.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xda2dad51ec4b0ed7217dc13492a07dfa2ecfba6c472f29ccd51de93488544ff9",
+				dir: "QmXChJsEfythUzDwB1UgNfqaGnCgqpiXunKLnyHYHDPT3Y",
+				json: "Qmd2Kz4cFZ7PLuAPy3c4Vh5ATYRmoSWcQFGEsSLtAKagFi",
+				name: "Sk8er cat #6",
+				file: "sk8er_cat_06.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x9e5f7637418fcc7078017fae7a3585c339faed3f37608563aa1209efa651d09c",
+				dir: "QmaxqmkGmxuqyB5mgYeEHiUqA8jRGEo111SCbj1Dr2kKWR",
+				json: "QmYzsZ1RaZgKJDaLtrFiweaGC8sBsz6DKAMn65gCJ9cxmH",
+				name: "Sk8er cat #7",
+				file: "sk8er_cat_07.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x2950a9f44f51b15dcb6dae6ae70bafc43824e9533f2e35373cd4bdcd8b38d741",
+				dir: "QmR9gLEvboGjDkPgwqATMuKCBWcLAbnHiYWPtvge9KzP6M",
+				json: "QmR7vmJgdwNCY8H5oTyorCgr8eEsapR1DH5mgDn8jBz3Np",
+				name: "Sk8er cat #8",
+				file: "sk8er_cat_08.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xc0121de1348a32a7d8d738ac57d807bee2d35bf79f03f26907bfa0f90b1b0619",
+				dir: "QmTcJ8oi62MU3Zptg94M486rgywsX1c2FCbF3PMhXnymST",
+				json: "QmbGR1Xyd4BdhLLcTWJQwUwLYh9ww6dF8EhYxNzXF2Wp64",
+				name: "Sk8er cat #9",
+				file: "sk8er_cat_09.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x6a378a224ff1fd0dbdc01cdaaca120e9799391777f11c8f046e3e24ff566b973",
+				dir: "QmeLaduaSLCftgZrQmzBHRAzQeE36LrUmCtmEZJvSWaEqG",
+				json: "QmVVH3Zc8A5FhHx7JtfMS3p5SeRuMPEMgGGKpUiJgppzJn",
+				name: "Sk8er cat #10",
+				file: "sk8er_cat_10.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x7e78555abae36cf256993fc3674a5ab1b714d011869809e55de5167a0d340fcf",
+				dir: "QmehZ5V8sEWx6ZuyUsfcXtMFz5fecesqYDsbDsyk3sxfTD",
+				json: "QmWrLW8913tqYnw9wie4BNc6oKCyPp4v1As8w9AhfrRjSn",
+				name: "Sk8er cat #11",
+				file: "sk8er_cat_11.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xa5dab6daa2be8b6097bf7c72017cfeefd12df5f526d5028281c29a0ce1fd1082",
+				dir: "QmaVU4hTCYmRDRDciaRuisy1RoYT8xWwdegyc3ufADS23z",
+				json: "QmZW5Qq9WGDudhLVgTCgYceFM3igaY5LPxTiz2BY5bL7L5",
+				name: "Sk8er cat #12",
+				file: "sk8er_cat_12.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x9c552cafb7df04ab1fa7d22fcc2e36a65a2bb8762f03b34426002893e8e9ab86",
+				dir: "QmSen8EtHNiYZNCrooew5MAQMKrQ6t7P7N5YS4M2pxnwdN",
+				json: "QmYrue2Wq7kvvcDjvbYjMGkSKjuVoDrphGLQfzSXp89mhw",
+				name: "Sk8er cat #13",
+				file: "sk8er_cat_13.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xb0cdd5364c6798adf700e96ce2cf0307e3813ee797196aa8fd3391f82721414b",
+				dir: "QmPav1PbbHcVtBhwWFJBW2Pr1nD6NByAR1Zw1F1wPRj2R5",
+				json: "QmaEpWBbwNGXkzR68Kp3ZNsRT3yefGKzGWzhECEMJrTpQz",
+				name: "Sk8er cat #14",
+				file: "sk8er_cat_14.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xd81b53246101fc28807f61892f068b063c9945a7f9ef428a752331fd5102acf7",
+				dir: "QmeNREdLafK33LXJUvQeDmQZWswdyt3KKUnTaAbo4bsCMz",
+				json: "QmctEwP7C2qLqMpXHwXRbif7vqvg5S2sd1tnYFfVFWsJn2",
+				name: "Sk8er cat #15",
+				file: "sk8er_cat_15.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x10913221c3393c1fa6971478c23a5e62f2b5f97df981983db048949272a29f0b",
+				dir: "QmUt1ixJ8Ziom18y17SAUkwhf64Q9MxAR2DRwMDQ9h2y1Q",
+				json: "QmPTKeLnKMiJ1disFYoqtGNVva9CkoRLqjBo13SaZY6x98",
+				name: "Sk8er cat #16",
+				file: "sk8er_cat_16.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xfd20abfe61e8a0b36e55b23751345804a9a07c98fa3927f9d3bf2f669de1b9dd",
+				dir: "Qmbbpf6wFdVtP7siWcuvVCYYQgeGXLhuPTWpV4rr2JZ4xK",
+				json: "QmfNkkaj5nvL3hRQR8Dxyg4LXsAYnXLffgioQ4esj7YBqW",
+				name: "Sk8er cat #17",
+				file: "sk8er_cat_17.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xcd8a01806f937a027715a910af5c890b68c4f1b571998e5029527669a3862384",
+				dir: "QmNqgUnJ34v62QWVCREs3YV1dr6JhacG65hnRG6LDZvCfT",
+				json: "QmcAzLiFkV7fqrvkNbHBovFAkgmtPKdBs6R9kMuKeZXi7M",
+				name: "Sk8er cat #18",
+				file: "sk8er_cat_18.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x35b54ead8f68297396e3e13aee06e11406c9f4a19c54e8ddd21902287c250492",
+				dir: "QmXwxGFU6C44BA261cprbAMMc5aUf6CrW8V5Ys6Br2mNvR",
+				json: "QmRxJfcrJJeFUYjsUfgkQEPVk3dQdLwjE6VenAFc8ZJDK7",
+				name: "Sk8er cat #19",
+				file: "sk8er_cat_19.gif",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x163ed257fcd082bd1b4d59e9e3afbb9ec5d43fad13e08345d2ca36bbd45f4b19",
+				dir: "QmYV1mLkDiBcW2j1Bpe5DAsBb73kEdyLxLqo5mRDg9KpRp",
+				json: "QmPqVEoAkBo2Ufwvss7u2f5hLvNj2NQZEQz87A5Jvca35r",
+				name: "Sk8er cat #20",
+				file: "sk8er_cat_20.gif",
+				pinata: true,
+				minted: 1
+			}];
+			
+			my_address="0xd20eff0dee643a226205f5b4ca1f73263cd68ba5";
+			contract_address="0x647d189591c7305bda896ac8c262bd364e1c2c99";
+			
+			updateWithTable("nft_1", my_address, contract_address, chess_font);
+			updateWithTable("nft_2", my_address, contract_address, sk8er_cats);
+			updateWithTable("nft_3", my_address, contract_address, other_nfts);
+			
+			function makePinataImgUrl(dir, filename){
+				return ("https://loopring.mypinata.cloud/ipfs/"+dir+"/"+filename);
+			}
+			
+			function makeExplorerUrl(nft_id, my_address, contract_address){
+				return ("https://explorer.loopring.io/nft/"+my_address+"-0-"+contract_address+"-"+nft_id+"-10");
+			}
+			
+			function makeLexplorerUrl(nft_id, my_address, contract_address){
+				return ("https://lexplorer.io/nfts/"+my_address+"-0-"+contract_address+"-"+nft_id+"-10");
+			}
+			
+			function updateWithTable(dom_id, my_address, contract_address, ntf_arr){
+				var i, len, rtn;
+				
+				rtn="<table cellspacing='0' cellpadding='0'>";
+				
+				rtn+="<thead>";
+				rtn+="<tr>";
+				rtn+="<th>ID</th>";
+				rtn+="<th>Img.</th>";
+				rtn+="<th>Name</th>";
+				rtn+="<th>URLs</th>";
+				rtn+="<th>Misc.</th>";
+				rtn+="<th>Amount minted</th>";
+				rtn+="</tr>";
+				rtn+="</thead>";
+				
+				for(i=0, len=ntf_arr.length; i<len; i++){
+					rtn+=("<tr>");
+					
+					rtn+=("<td>"+(i+1)+"</td>");
+					
+					if(ntf_arr[i].pinata){
+						rtn+=("<td><img class='d-inline-block align-top' src='"+makePinataImgUrl(ntf_arr[i].dir, ntf_arr[i].file)+"' alt='NFT preview: "+ntf_arr[i].name+"'></td>");
+					}else{
+						rtn+="<td>-</td>";
+					}
+					
+					rtn+=("<td>"+ntf_arr[i].name+"</td>");
+					
+					rtn+="<td class='alignLeft'><ul>";
+					rtn+=("<li><a href='"+makeExplorerUrl(ntf_arr[i].id, my_address, contract_address)+"' target='_blank'>Loopring</a></li>");
+					rtn+=("<li><a href='"+makeLexplorerUrl(ntf_arr[i].id, my_address, contract_address)+"' target='_blank'>Lexplorer</a></li>");
+					rtn+="</ul></td>";
+					
+					rtn+="<td class='alignLeft smallText'><ul>";
+					rtn+=("<li>"+(ntf_arr[i].dir+"/"+ntf_arr[i].file)+"</li>");
+					rtn+=("<li>"+ntf_arr[i].json+"</li>");
+					rtn+="</ul></td>";
+					
+					rtn+=("<td>"+ntf_arr[i].minted+"</td>");
+					
+					rtn+=("</tr>");
+				}
+				
+				rtn+=("</table>");
+				
+				document.getElementById(dom_id).innerHTML=rtn;
+				
+				return rtn;
+			}
+		</script>
+	</body>
+</html>
