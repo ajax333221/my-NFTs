@@ -89,12 +89,18 @@
 			
 			<hr>
 			
-			<h2>other NFTs:</h2>
+			<h2>Elemenix NFTs collection:</h2>
+			<div class="small_link">Google form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-pAG0yL3geeUCzinlwj1E7jjH1vqUc6rhU_g5yuzroRULcA/viewform">https://docs.google.com/forms/d/e/1FAIpQLSe-pAG0yL3geeUCzinlwj1E7jjH1vqUc6rhU_g5yuzroRULcA/viewform</a></div>
 			<div id="nft_3">...</div>
+			
+			<hr>
+			
+			<h2>other NFTs:</h2>
+			<div id="nft_4">...</div>
 		</div>
 		
 		<script>
-			var other_nfts, chess_font, sk8er_cats, my_address, contract_address;
+			var other_nfts, chess_font, sk8er_cats, elemenix_nfts, my_address, contract_address;
 			
 			other_nfts=[{
 				id: "0x7989f604447d621bb79e64feb98ba64ce03a47dd174be6892ef1081c24b86d61",
@@ -622,12 +628,263 @@
 				minted: 1
 			}];
 			
+			elemenix_nfts=[{
+				id: "0x35e733103f562f7764e949785087bd791b6b42ae80af028f2b79657b8ff3edff",
+				dir: "QmNimyD2wciMXq43hnbH5QWnj6odUo8xf9ZoHqbE5vZ8gX",
+				json: "QmRy4nrrhoTHZRoHiuZtksYmihEnh7CrzSZA5ehBdCaEUv",
+				name: "Elemenix #001",
+				file: "Elemenix_001.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x7d2ba601022bf2949adfcced3822254957cc8be11588f55b32259d9b6e027d4c",
+				dir: "QmYT4MA9KrmqAbSQVhmVto1k76r4B9oHVfnuBGFw4Q2x6L",
+				json: "QmWmGGtFFfoLtaTQR1R6XoS7QqfptiVdzPgMDbBdvztKvT",
+				name: "Elemenix #002",
+				file: "Elemenix_002.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x2fa47374751882f43dbe22c4f7cbf3b1d9ba222d45a69704e84760de3cdf2c8a",
+				dir: "QmcJCE4Gvk6VHn6uaaaP3fuTyi7H2NEULdx8gqyHShV9S4",
+				json: "QmRYdK5vuiXXecMvcMWpyz7xrmwCVSU4M4qxqpzotZDjgD",
+				name: "Elemenix #003",
+				file: "Elemenix_003.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x81d7f9d3bb4a96ea2635e1688937b841861364d30c9f136402cc3be8a67f695",
+				dir: "QmdHUi5DtGkXezx6cZKF2UrzmNxsfMePVyHptudz8wzxdv",
+				json: "QmNtL4RCyenAQhrN1cgna47fnxp4KBkA5qWREkxg717LJY",
+				name: "Elemenix #004",
+				file: "Elemenix_004.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xa87cdc93242c3ea7309ff70bee02b29aa472bdc1408b4882d640912eb27c2c1b",
+				dir: "QmfZgFFnuXAqga8QKtgRexM64h78qBx8DXi8E8FqgRHsUj",
+				json: "QmZgMdYyagDUXYX4AEYw632p1cbDcdYUXk8LBWW9UrLnwc",
+				name: "Elemenix #005",
+				file: "Elemenix_005.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x91ca09f989de62e577637b180a0e26e88b970627211546c4846fcba6a99fbf04",
+				dir: "QmVNLnrAcMRwCzCHe1TwPcs8ZxusbBLpo4ZnDUA72ykFZV",
+				json: "QmY9kWXtCfL6JZ8QHD1FjSHXGYTdZsvWhybzoWddNL1Ji7",
+				name: "Elemenix #006",
+				file: "Elemenix_006.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x6f7194410efa5eb0b52899fffc10cbbfae92ddb13c7245d920dd7c0e3fabb7b5",
+				dir: "QmS7bbLodhpT2wZw4dKim5Zybv9npMNCoFF7shQDjqzcny",
+				json: "QmVqgQxjgm2v262uYtJFn5jyrH7gHGBmPpBdcY5EEGX9et",
+				name: "Elemenix #007",
+				file: "Elemenix_007.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x4d1c2869404bb26fb80642420a269844a69f18c8c582c27c912f24aef31dee2f",
+				dir: "QmcNEV9oaPLwG1s8xnBGkTX5dkik4gWbvaHNoiEeANgoTt",
+				json: "QmTXf1FoMo2qiDwHoAUzt6Hk4WvrfFsD3SyRK6tE4cy7pa",
+				name: "Elemenix #008",
+				file: "Elemenix_008.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xd0ec1bb322803a9888e8c76be50dcc318c1929dd66638ec9810f98f28182e3fb",
+				dir: "QmWQRuHyTvWBtXwH2MouK2kmqEx8EqaEk9qj8BgUWAEwBG",
+				json: "QmcQCKrnx7M73mXw4oFGMFdWS4SQvLB8w7eUrJe5BzrinE",
+				name: "Elemenix #009",
+				file: "Elemenix_009.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x5ef7bb28695df6924f57ea9a474561925893492e3f1333df8cbfed14936469ee",
+				dir: "QmQU2c6hCgf1EqrSPpBZw6AUbPK7fQFjGuVBSTRUArmzzp",
+				json: "QmUjN8N2D44Wg4V2bNAbupGKXFtHHufkotRZMStf3VZfCR",
+				name: "Elemenix #010",
+				file: "Elemenix_010.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x30eb36606c20febb47898a70a72e53e60ffe269e43cc47cd864cc847833eca8d",
+				dir: "Qma6yTVXmboqCoWN2JA4r3UcbutPyM4oCKDLPGeFDYvoVf",
+				json: "QmRdcJUSWcGEG3tn9rd1HynMcbcQsKVtx2CAwzhxCPtZTr",
+				name: "Elemenix #011",
+				file: "Elemenix_011.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x972a8142310aca94cb51ca3bc24d29e0ae6671ea4f2600c2300f936575414f71",
+				dir: "QmSgCSFizddguFnSKX5auKkMakcNRUgEYJYxk8K9U3kkDa",
+				json: "QmYWjs2wgCDNx7gKaxEcbxt41ucWhMAnamjzTM46sWECvC",
+				name: "Elemenix #012",
+				file: "Elemenix_012.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xa50152c6a4faf12592e0961723f338f8e62e75d4070b617481699876422556a5",
+				dir: "QmeCqTMwqmxRtRmvr7bVS2P3EZ9nLcQkr58e7aBDVKtw7p",
+				json: "QmZSm9ezHqRJmJTZyi8kVwTBzLtJHQZDjm8WjM4ecLCD7J",
+				name: "Elemenix #013",
+				file: "Elemenix_013.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xf4c8828e416875a8923452f9d1d359a1dc238b933276a34a003af63e002723c7",
+				dir: "QmRXrmNryjf7vgPNTMccNK922omZBzxah2DaJJMnHBRh7m",
+				json: "QmepBX6z7Jw9gc3hCpSqTAaxAqCTrasWnXXHyyt8Z8UQf8",
+				name: "Elemenix #014",
+				file: "Elemenix_014.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x40cdae466b8adf5a44c9b5c3ecd06b3942241562c0ce1b3e96adaeba1ea6cb7b",
+				dir: "QmW4XiHcdz1D57gNpdjbeDLJY8m6GcdfMCobpMKqkZ9Ckp",
+				json: "QmShchycysJkSaQV9TyJ7ghgBipi3fmyvpfXzjAUX2wkgS",
+				name: "Elemenix #015",
+				file: "Elemenix_015.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xce5e91e9f624a9eadd1175ed0b741b2e2dd4cbaba6255acfb8646813a5725ebf",
+				dir: "QmNb4twMpgj39LZbykTgPW3PVFcSNVTfQVVGVCyNLcnJpF",
+				json: "QmcEELHxPB4zfDt2YgQ5P58FrHpt1sPyDGY9XxdjYx2jLJ",
+				name: "Elemenix #016",
+				file: "Elemenix_016.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xc81900991f04fc39e5aba212ff3b7893c91e82b9b7853ee38a3daee1583303b4",
+				dir: "QmRZWWYhVUrjfaeaHH2fCq7m9KKWZg2X8kcYgMvd8Bvts2",
+				json: "QmbokMucL87qznPf9Vp1Qoh5kJdvoCC6TL7XRYpmUXaEBu",
+				name: "Elemenix #017",
+				file: "Elemenix_017.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x63318534409a7b9025d0db20118e87486f4f622ef6abf220fe7ff41813b9fa2c",
+				dir: "QmbiUNsQ6GHLfuHabMJvcsRBxwwAtrQsjf4LF3He81JCJ4",
+				json: "QmV1rsH1konqKU6ENerJPivsYWAHWg2ib3sBcQhYGqiXQw",
+				name: "Elemenix #018",
+				file: "Elemenix_018.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x46736aa96b2de6e15403f470b51bd6ae2ad473dad814c17efe2a997adf5774f3",
+				dir: "Qmd6HXiuTETRwztsW3LWbw4JoqvAGGQvxRWRQYcCPFCUNr",
+				json: "QmT5fKiLVxoXMrC8v4pH2QDCCq9DMn8CUaTZ432JfV2KTY",
+				name: "Elemenix #019",
+				file: "Elemenix_019.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xb8287a7127030ae3c7cbc0c886c96b46943b4ce7e6a4dfa9c5fca9be0f426c5a",
+				dir: "QmZ9zdNtfNAqP78YXocp2yDhQwnT8rnv69GxWU4vp8bT2Q",
+				json: "QmajXXQnoVjzLJEAui6PNqiLskt4cF8V46a1D2J5qg2eJu",
+				name: "Elemenix #020",
+				file: "Elemenix_020.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x822ee4d2d93028934db099c4308edea2762f2efbeb8d0c18d502a5717ce51ae7",
+				dir: "QmRzoWiiCLkA77dv8y57zgmRde2aB1uUMgoX5ddRsG9Cbd",
+				json: "QmX6qBbCvShVKCGpRiwoSxVTfQQnXVWK9tGQcc15PX4vBQ",
+				name: "Elemenix #021",
+				file: "Elemenix_021.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x8cc9e86e5f0d2ab787fcef6e6d02f73b0ed964dea42afa74890830e466143f7f",
+				dir: "QmbppfAJWBzfRewX49jbouKVy7E5xegFvdCnMXURpa6MQy",
+				json: "QmXpEMaaLFUt7kt8ucn4m6yWnxET8sYg9GQXfr5YTDbREW",
+				name: "Elemenix #022",
+				file: "Elemenix_022.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x933bf561053d5fd2dcd09392feeca9e013e1fbecddbb24f50b758bdac17ecec8",
+				dir: "Qmd2rfWRuY9iiMFKn3djx6Jqxzm5176K5m6CY6jsAPoMu2",
+				json: "QmYFPfjq2FtefFoLAphk2CfyoVVa2REJZEuRirTvL3G4DD",
+				name: "Elemenix #023",
+				file: "Elemenix_023.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xb593d87428b9f25ceddceb38b4e212cb495bcd921f28ea4a5b879afd74b62290",
+				dir: "QmbagirmEauMAzAKmxAXraqsNPG516oa99sub6LhC4WFkE",
+				json: "QmaZTFviBUPQqYF4C8ntyFAmnbvwUsqAkzfzA1nYKaL9uZ",
+				name: "Elemenix #024",
+				file: "Elemenix_024.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xf023178dfff3acf1c5fa92b66f77f4305ea2e49e4d73a119bfd47d95c4e9a4eb",
+				dir: "QmYiD4rNGBYB27qbY8JAYd85562FqNxFuxojfa9n3djrLU",
+				json: "QmeW3bKbkZmiVJQ69njEzjUun2bq4hdBZHcqwsJZqwZcKC",
+				name: "Elemenix #025",
+				file: "Elemenix_025.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x37c99cadd7c8d2e8c299ffe69792e59fad817c54fac7ae51fbf2c9ba3aeace78",
+				dir: "QmfDb4vq4HrASJ9AtoZZdaQzntrDcgmJkMP7vAU9txt8Kd",
+				json: "QmS6RST7cPzXCBq758cxddyJoZC4bTyV9ccdErELc4GBwm",
+				name: "Elemenix #026",
+				file: "Elemenix_026.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xf65b2629ed375c8c3744d0abfa2d462f8fe3ad6c003415388ca596709f4bafcd",
+				dir: "QmQB3b6hATHVnhmcEEZAv6js8bw83JZExzCQXU8wR1evww",
+				json: "QmevKcg7n9AueVaSJsrMhArSkFYHnMt2LPiqScfZ9ir5gp",
+				name: "Elemenix #027",
+				file: "Elemenix_027.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xbd7e1ee89d466b812bc53f4254124abbebf35ac2038216b16b4f2cfa0c6c5b30",
+				dir: "QmUzupyy2RwTd5mQT5VtBFW7LooXGc9C3KWp2JfZaTTK2i",
+				json: "Qmb6MJiRXuxo8x5guZYEiCjrgKCJ6UuaaQzENBSgNXh6EB",
+				name: "Elemenix #028",
+				file: "Elemenix_028.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xea49585ded301796c4110a8389f223fc24a8c69cf553a3f99c88892419460e0c",
+				dir: "QmQxyzqfYM3CiZfU9cqmzLjSdf9995oNCnctyL6RfQMEHF",
+				json: "Qme7Cyf7yebawqZDisxHnjBsMmHYZkTJVve1pRQMQoXQ2f",
+				name: "Elemenix #029",
+				file: "Elemenix_029.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0xa6b560044607b991dad6479aa333d30c2bb99066bc77575fca8aba453a416085",
+				dir: "QmY12ETKa1RQNPVnpbCPFBs32TCsz6dry6eknwLzspnx5v",
+				json: "QmZZQo9KYQLFXmvSBFRNHgSadMS8nMRWFgCHoSsKaA4ouW",
+				name: "Elemenix #030",
+				file: "Elemenix_030.png",
+				pinata: true,
+				minted: 1
+			}, {
+				id: "0x9e859464a7fe79602633bdcd8146b9997c208d744ad1fe8d19cc27154ebdf0a5",
+				dir: "QmQ59Aq6hJg881whXs2keMERvwt1uwpxz1KSD1aDYengM7",
+				json: "QmZ1TGHQMej4Gf2b1Fy33V8c7fT5dQJnCws2fJtrrMEyhE",
+				name: "Elemenix #031",
+				file: "Elemenix_031.png",
+				pinata: true,
+				minted: 1
+			}];
+			
 			my_address="0xd20eff0dee643a226205f5b4ca1f73263cd68ba5";
 			contract_address="0x647d189591c7305bda896ac8c262bd364e1c2c99";
 			
 			updateWithTable("nft_1", my_address, contract_address, chess_font);
 			updateWithTable("nft_2", my_address, contract_address, sk8er_cats);
-			updateWithTable("nft_3", my_address, contract_address, other_nfts);
+			updateWithTable("nft_3", my_address, contract_address, elemenix_nfts);
+			updateWithTable("nft_4", my_address, contract_address, other_nfts);
 			
 			function makePinataImgUrl(dir, filename){
 				return ("https://loopring.mypinata.cloud/ipfs/"+dir+"/"+filename);
