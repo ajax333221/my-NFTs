@@ -100,7 +100,10 @@
 		</div>
 		
 		<script>
-			var other_nfts, chess_font, sk8er_cats, elemenix_nfts, my_address, contract_address;
+			var other_nfts, chess_font, sk8er_cats, elemenix_nfts, my_address, contract_address, coll_default, coll_elemenix;
+			
+			coll_default="0x647d189591c7305bda896ac8c262bd364e1c2c99";
+			coll_elemenix="0xdeec648e819bf6ea588b3561754de2d80038e1af";
 			
 			other_nfts=[{
 				id: "0x7989f604447d621bb79e64feb98ba64ce03a47dd174be6892ef1081c24b86d61",
@@ -108,6 +111,7 @@
 				json: "QmWX647BFyJu4UY9cWHvw5srbtKQTqV5PuG5eCVBNx88w2",
 				name: "ajax333221",
 				file: "avatar.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -116,6 +120,7 @@
 				json: "QmdAVuQiohXsyRS2drxV4orWdDGRdD8sz6Bt5UzwyRhXMC",
 				name: "Looprix",
 				file: "matrix.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 5
 			}, {
@@ -124,6 +129,7 @@
 				json: "QmVkPTXfAJhc2n3V35rZHsTToaY7qm8rE8dLigaU4pcR9e",
 				name: "Looptal",
 				file: "looptal.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 3
 			}, {
@@ -132,6 +138,7 @@
 				json: "QmRzkoo5ZL6rhqvirzKgW5ByEArzT3Djz6jwhNtWzyBDYh",
 				name: "Circle Star",
 				file: "CircleStar.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}];
@@ -142,6 +149,7 @@
 				json: "QmPZAY6j74U4BQagiGXh6soE8uUT3HHhozDwSWNYwaPTPX",
 				name: "Pawn (white)",
 				file: "wp.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 35
 			}, {
@@ -150,6 +158,7 @@
 				json: "QmbbncnJaKq4ZpbiiTezcseYCLZBK7VEaqb4JWiz3utbhx",
 				name: "Pawn (black)",
 				file: "bp.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 35
 			}, {
@@ -158,6 +167,7 @@
 				json: "QmPR8c89zTG5bdtgrKqaDSv9twTe8Sc2dkDJZ8jMKgvEVD",
 				name: "Knight (white)",
 				file: "wn.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 20
 			}, {
@@ -166,6 +176,7 @@
 				json: "QmSn6T22XUHHxuWriLtMx3cb96pLXfA8Y45ztSvjXG4UUr",
 				name: "Knight (black)",
 				file: "bn.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 20
 			}, {
@@ -174,6 +185,7 @@
 				json: "QmY4iYE8aHu5oDWLYCudnLbaPp6u38sCwWcSPcuZk2nmQe",
 				name: "Bishop (white)",
 				file: "wb.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 20
 			}, {
@@ -182,6 +194,7 @@
 				json: "QmWdYW3wGdcXStGpmXMvjGsnBt9C9MMSimJYoY8pb2NMg3",
 				name: "Bishop (black)",
 				file: "bb.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 20
 			}, {
@@ -190,6 +203,7 @@
 				json: "QmTKkS7YNnSo1JyNUUZo2G9d8ZGm3waQRRnmYLrfz2DawQ",
 				name: "Rook (white)",
 				file: "wr.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 15
 			}, {
@@ -198,6 +212,7 @@
 				json: "QmQmGzuaxzFY44ANnW6iiM7KyRTjfzcYDBMB2jTdB1jCUS",
 				name: "Rook (black)",
 				file: "br.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 15
 			}, {
@@ -206,6 +221,7 @@
 				json: "QmbnDyXGCbWXvtvxpkJvnwPHv6SoWd438enjLY5tFFUnVm",
 				name: "Queen (white)",
 				file: "wq.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 10
 			}, {
@@ -214,6 +230,7 @@
 				json: "QmcmfTubDLHr9FBG7MRPxiR3i1D9ZESSHjTTaPrzVn8u1w",
 				name: "Queen (black)",
 				file: "bq.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 10
 			}, {
@@ -222,6 +239,7 @@
 				json: "QmSM2VUKrh349Vn3t4EnmvFWVmNev8GkQSmLe9rCyQjMK9",
 				name: "King (white)",
 				file: "wk.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 5
 			}, {
@@ -230,6 +248,7 @@
 				json: "QmbgHFUREsiJG2RU7aYVE6ZmvGuB5Xh8C6QH8kH3RfArH3",
 				name: "King (black)",
 				file: "bk.png",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 5
 			}];
@@ -240,6 +259,7 @@
 				json: "QmQkEwAomQwVdUGZPtPEvuXpz6A25XV9KVA89X8gqc8jrj",
 				name: "Sk8er cat #1",
 				file: "sk8er_cat_01.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -248,6 +268,7 @@
 				json: "QmfBdQynpBsscyrvT3yR6bn4wGg2Lhy8c5jFq6uM48S1r4",
 				name: "Sk8er cat #2",
 				file: "sk8er_cat_02.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -256,6 +277,7 @@
 				json: "QmezXnxvvovCxSS9FaRJgSXgqLdjXgMYUqRfNwnvSJiugv",
 				name: "Sk8er cat #3",
 				file: "sk8er_cat_03.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -264,6 +286,7 @@
 				json: "QmQBNR8dqCcJwML49opLkfxZcqr9wLje17RFo11WDpw1FC",
 				name: "Sk8er cat #4",
 				file: "sk8er_cat_04.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -272,6 +295,7 @@
 				json: "QmQredrL1L5EVqDpwD8XKnV7vLPC1YL4QzGBvf2yRP1jsk",
 				name: "Sk8er cat #5",
 				file: "sk8er_cat_05.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -280,6 +304,7 @@
 				json: "Qmd2Kz4cFZ7PLuAPy3c4Vh5ATYRmoSWcQFGEsSLtAKagFi",
 				name: "Sk8er cat #6",
 				file: "sk8er_cat_06.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -288,6 +313,7 @@
 				json: "QmYzsZ1RaZgKJDaLtrFiweaGC8sBsz6DKAMn65gCJ9cxmH",
 				name: "Sk8er cat #7",
 				file: "sk8er_cat_07.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -296,6 +322,7 @@
 				json: "QmR7vmJgdwNCY8H5oTyorCgr8eEsapR1DH5mgDn8jBz3Np",
 				name: "Sk8er cat #8",
 				file: "sk8er_cat_08.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -304,6 +331,7 @@
 				json: "QmbGR1Xyd4BdhLLcTWJQwUwLYh9ww6dF8EhYxNzXF2Wp64",
 				name: "Sk8er cat #9",
 				file: "sk8er_cat_09.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -312,6 +340,7 @@
 				json: "QmVVH3Zc8A5FhHx7JtfMS3p5SeRuMPEMgGGKpUiJgppzJn",
 				name: "Sk8er cat #10",
 				file: "sk8er_cat_10.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -320,6 +349,7 @@
 				json: "QmWrLW8913tqYnw9wie4BNc6oKCyPp4v1As8w9AhfrRjSn",
 				name: "Sk8er cat #11",
 				file: "sk8er_cat_11.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -328,6 +358,7 @@
 				json: "QmZW5Qq9WGDudhLVgTCgYceFM3igaY5LPxTiz2BY5bL7L5",
 				name: "Sk8er cat #12",
 				file: "sk8er_cat_12.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -336,6 +367,7 @@
 				json: "QmYrue2Wq7kvvcDjvbYjMGkSKjuVoDrphGLQfzSXp89mhw",
 				name: "Sk8er cat #13",
 				file: "sk8er_cat_13.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -344,6 +376,7 @@
 				json: "QmaEpWBbwNGXkzR68Kp3ZNsRT3yefGKzGWzhECEMJrTpQz",
 				name: "Sk8er cat #14",
 				file: "sk8er_cat_14.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -352,6 +385,7 @@
 				json: "QmctEwP7C2qLqMpXHwXRbif7vqvg5S2sd1tnYFfVFWsJn2",
 				name: "Sk8er cat #15",
 				file: "sk8er_cat_15.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -360,6 +394,7 @@
 				json: "QmPTKeLnKMiJ1disFYoqtGNVva9CkoRLqjBo13SaZY6x98",
 				name: "Sk8er cat #16",
 				file: "sk8er_cat_16.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -368,6 +403,7 @@
 				json: "QmfNkkaj5nvL3hRQR8Dxyg4LXsAYnXLffgioQ4esj7YBqW",
 				name: "Sk8er cat #17",
 				file: "sk8er_cat_17.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -376,6 +412,7 @@
 				json: "QmcAzLiFkV7fqrvkNbHBovFAkgmtPKdBs6R9kMuKeZXi7M",
 				name: "Sk8er cat #18",
 				file: "sk8er_cat_18.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -384,6 +421,7 @@
 				json: "QmRxJfcrJJeFUYjsUfgkQEPVk3dQdLwjE6VenAFc8ZJDK7",
 				name: "Sk8er cat #19",
 				file: "sk8er_cat_19.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -392,6 +430,7 @@
 				json: "QmPqVEoAkBo2Ufwvss7u2f5hLvNj2NQZEQz87A5Jvca35r",
 				name: "Sk8er cat #20",
 				file: "sk8er_cat_20.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -400,6 +439,7 @@
 				json: "QmaygN9Wrg7372eDV4kadkGQLTH1Rk7TJhRCVJzPbG6tB2",
 				name: "Sk8er cat #21",
 				file: "sk8er_cat_21.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -408,6 +448,7 @@
 				json: "QmdgWqhwTJqoPDqwZoxMj4t6wMSb4YYCW9jME53eCaQbB1",
 				name: "Sk8er cat #22",
 				file: "sk8er_cat_22.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -416,6 +457,7 @@
 				json: "QmcRr1gBhhaS2Ew1wxVVkV5dCPHMTX67nFSa4zMTAdC4qk",
 				name: "Sk8er cat #23",
 				file: "sk8er_cat_23.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -424,6 +466,7 @@
 				json: "QmYK5MEC1oRipaCLwm2W33dtFHrojLyrgPjnVJwm1UaiBu",
 				name: "Sk8er cat #24",
 				file: "sk8er_cat_24.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -432,6 +475,7 @@
 				json: "QmeNCHb2NgNiXvcusoUrPkwT8wV8PVvWcYmVYmoTLkMKsu",
 				name: "Sk8er cat #25",
 				file: "sk8er_cat_25.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -440,6 +484,7 @@
 				json: "QmVfUr9D1kq7n9AMdcfwmwKnNpSTvFj76cXAeDEmMPAUpv",
 				name: "Sk8er cat #26",
 				file: "sk8er_cat_26.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -448,6 +493,7 @@
 				json: "QmWsfahZLBM4WvNW2Gu7w8cKrouTUbNLvCJuP34Kb8kNd4",
 				name: "Sk8er cat #27",
 				file: "sk8er_cat_27.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -456,6 +502,7 @@
 				json: "QmYESLeSdP8eDJYugdhEg1ZUvqiBXfKvb4egHNrAN1z3p8",
 				name: "Sk8er cat #28",
 				file: "sk8er_cat_28.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -464,6 +511,7 @@
 				json: "QmPjrX6JnWk1eM4kn2dYt37u26hzt784v9eQ3aY8cvYQKE",
 				name: "Sk8er cat #29",
 				file: "sk8er_cat_29.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -472,6 +520,7 @@
 				json: "QmZ5cD3qnAMJei9C6Ft14NQufygPzT4QJE9RMRrG3jr6vA",
 				name: "Sk8er cat #30",
 				file: "sk8er_cat_30.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -480,6 +529,7 @@
 				json: "QmccYyi3EEcRbrewPQ6fpE8RhhAX3ySvRXtBzDjGoqfZbw",
 				name: "Sk8er cat #31",
 				file: "sk8er_cat_31.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -488,6 +538,7 @@
 				json: "QmSXNCruKpzkzhJb4taE3FPCCxY9Kq1UFxG45CxvNsdvuM",
 				name: "Sk8er cat #32",
 				file: "sk8er_cat_32.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -496,6 +547,7 @@
 				json: "QmdaEBUapAAFvX5ZfYWLxBUh66WZpqXiH4rR6dvgzeFw7y",
 				name: "Sk8er cat #33",
 				file: "sk8er_cat_33.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -504,6 +556,7 @@
 				json: "Qmdd3re8eQr8QAeESMtZM7YmpD5NNX3hMNLgWhaxqTzpXs",
 				name: "Sk8er cat #34",
 				file: "sk8er_cat_34.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -512,6 +565,7 @@
 				json: "QmaXFQrkDo1GnXgHSrrVVsJkqdQCzGZoV2sSz9UNxVtq2N",
 				name: "Sk8er cat #35",
 				file: "sk8er_cat_35.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -520,6 +574,7 @@
 				json: "QmQAknGSZ1uZTyFia99Wfwh54s67Wu5BXJyWe4kuqfqjTN",
 				name: "Sk8er cat #36",
 				file: "sk8er_cat_36.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -528,6 +583,7 @@
 				json: "QmeJ999MrNvaSVqfnwRShE2YuRdEkursaEvASFw75ikAyB",
 				name: "Sk8er cat #37",
 				file: "sk8er_cat_37.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -536,6 +592,7 @@
 				json: "QmePEVSJGWkv5n867ZtLoRvcDDd4bnNSmjLeW9o54vtrTN",
 				name: "Sk8er cat #38",
 				file: "sk8er_cat_38.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -544,6 +601,7 @@
 				json: "QmeYWsAeiiE7GBfwxaj2uZRGqfzNtgBv8cG5QJcb6CGH8P",
 				name: "Sk8er cat #39",
 				file: "sk8er_cat_39.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -552,6 +610,7 @@
 				json: "QmcwhBPJ6Ey19Uf2TqRZnSDujV2HBf1b8jaA92MVQ2Eqak",
 				name: "Sk8er cat #40",
 				file: "sk8er_cat_40.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -560,6 +619,7 @@
 				json: "QmdeuYQ2sgGZBCsu1XxVgfs1mfneicrddvLK34Jtp4mbt4",
 				name: "Sk8er cat #41",
 				file: "sk8er_cat_41.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -568,6 +628,7 @@
 				json: "QmbbLxcyJmiEHBRrQdywcnmBfeUT45vXVtCPFnhS23afT1",
 				name: "Sk8er cat #42",
 				file: "sk8er_cat_42.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -576,6 +637,7 @@
 				json: "QmdE7MJjRoUh5j3vgveSpv2M8SzcBLsNDEysGHfCXyU9pH",
 				name: "Sk8er cat #43",
 				file: "sk8er_cat_43.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -584,6 +646,7 @@
 				json: "QmVLqMyh3iooCFYVWQReTqvX154u72ZTmYQYzYhW1ASoDn",
 				name: "Sk8er cat #44",
 				file: "sk8er_cat_44.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -592,6 +655,7 @@
 				json: "QmYHbC7PSi4a8psgGxARCgmskWZfnmNJzvP9EVjrGj5fDT",
 				name: "Sk8er cat #45",
 				file: "sk8er_cat_45.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -600,6 +664,7 @@
 				json: "QmQBXN7SCukoGuGj1FXwyUNkir9sV1zrH1PQZL3VnPaE86",
 				name: "Sk8er cat #46",
 				file: "sk8er_cat_46.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -608,6 +673,7 @@
 				json: "QmcRd5SU2Dk1jFip65ssQe2YYkDaJYNL4xcnN3SULy2Ej2",
 				name: "Sk8er cat #47",
 				file: "sk8er_cat_47.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -616,6 +682,7 @@
 				json: "QmUzHNG1aYkpg2R6rEqEPiWzebnowUFcVyCFWP1GodQnTw",
 				name: "Sk8er cat #48",
 				file: "sk8er_cat_48.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -624,6 +691,7 @@
 				json: "QmawtcJRrRz9WDXThbj9fb4VYfekYzbgbemsFn31X8HAWm",
 				name: "Sk8er cat #49",
 				file: "sk8er_cat_49.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}, {
@@ -632,6 +700,7 @@
 				json: "QmZm2vgpEdQE5xi1mFkhEgJZoCCEbim8MvD6vh6RU4AaZN",
 				name: "Sk8er cat #50",
 				file: "sk8er_cat_50.gif",
+				collection: coll_default,
 				royaltyPercentage: 10,
 				minted: 1
 			}];
@@ -642,6 +711,7 @@
 				json: "QmRy4nrrhoTHZRoHiuZtksYmihEnh7CrzSZA5ehBdCaEUv",
 				name: "Elemenix #001",
 				file: "Elemenix_001.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -650,6 +720,7 @@
 				json: "QmWmGGtFFfoLtaTQR1R6XoS7QqfptiVdzPgMDbBdvztKvT",
 				name: "Elemenix #002",
 				file: "Elemenix_002.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -658,6 +729,7 @@
 				json: "QmRYdK5vuiXXecMvcMWpyz7xrmwCVSU4M4qxqpzotZDjgD",
 				name: "Elemenix #003",
 				file: "Elemenix_003.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -666,6 +738,7 @@
 				json: "QmNtL4RCyenAQhrN1cgna47fnxp4KBkA5qWREkxg717LJY",
 				name: "Elemenix #004",
 				file: "Elemenix_004.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -674,6 +747,7 @@
 				json: "QmZgMdYyagDUXYX4AEYw632p1cbDcdYUXk8LBWW9UrLnwc",
 				name: "Elemenix #005",
 				file: "Elemenix_005.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -682,6 +756,7 @@
 				json: "QmY9kWXtCfL6JZ8QHD1FjSHXGYTdZsvWhybzoWddNL1Ji7",
 				name: "Elemenix #006",
 				file: "Elemenix_006.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -690,6 +765,7 @@
 				json: "QmVqgQxjgm2v262uYtJFn5jyrH7gHGBmPpBdcY5EEGX9et",
 				name: "Elemenix #007",
 				file: "Elemenix_007.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -698,6 +774,7 @@
 				json: "QmTXf1FoMo2qiDwHoAUzt6Hk4WvrfFsD3SyRK6tE4cy7pa",
 				name: "Elemenix #008",
 				file: "Elemenix_008.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -706,6 +783,7 @@
 				json: "QmcQCKrnx7M73mXw4oFGMFdWS4SQvLB8w7eUrJe5BzrinE",
 				name: "Elemenix #009",
 				file: "Elemenix_009.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -714,6 +792,7 @@
 				json: "QmUjN8N2D44Wg4V2bNAbupGKXFtHHufkotRZMStf3VZfCR",
 				name: "Elemenix #010",
 				file: "Elemenix_010.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -722,6 +801,7 @@
 				json: "QmRdcJUSWcGEG3tn9rd1HynMcbcQsKVtx2CAwzhxCPtZTr",
 				name: "Elemenix #011",
 				file: "Elemenix_011.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -730,6 +810,7 @@
 				json: "QmYWjs2wgCDNx7gKaxEcbxt41ucWhMAnamjzTM46sWECvC",
 				name: "Elemenix #012",
 				file: "Elemenix_012.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -738,6 +819,7 @@
 				json: "QmZSm9ezHqRJmJTZyi8kVwTBzLtJHQZDjm8WjM4ecLCD7J",
 				name: "Elemenix #013",
 				file: "Elemenix_013.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -746,6 +828,7 @@
 				json: "QmepBX6z7Jw9gc3hCpSqTAaxAqCTrasWnXXHyyt8Z8UQf8",
 				name: "Elemenix #014",
 				file: "Elemenix_014.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -754,6 +837,7 @@
 				json: "QmShchycysJkSaQV9TyJ7ghgBipi3fmyvpfXzjAUX2wkgS",
 				name: "Elemenix #015",
 				file: "Elemenix_015.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -762,6 +846,7 @@
 				json: "QmcEELHxPB4zfDt2YgQ5P58FrHpt1sPyDGY9XxdjYx2jLJ",
 				name: "Elemenix #016",
 				file: "Elemenix_016.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -770,6 +855,7 @@
 				json: "QmbokMucL87qznPf9Vp1Qoh5kJdvoCC6TL7XRYpmUXaEBu",
 				name: "Elemenix #017",
 				file: "Elemenix_017.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -778,6 +864,7 @@
 				json: "QmV1rsH1konqKU6ENerJPivsYWAHWg2ib3sBcQhYGqiXQw",
 				name: "Elemenix #018",
 				file: "Elemenix_018.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -786,6 +873,7 @@
 				json: "QmT5fKiLVxoXMrC8v4pH2QDCCq9DMn8CUaTZ432JfV2KTY",
 				name: "Elemenix #019",
 				file: "Elemenix_019.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -794,6 +882,7 @@
 				json: "QmajXXQnoVjzLJEAui6PNqiLskt4cF8V46a1D2J5qg2eJu",
 				name: "Elemenix #020",
 				file: "Elemenix_020.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -802,6 +891,7 @@
 				json: "QmX6qBbCvShVKCGpRiwoSxVTfQQnXVWK9tGQcc15PX4vBQ",
 				name: "Elemenix #021",
 				file: "Elemenix_021.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -810,6 +900,7 @@
 				json: "QmXpEMaaLFUt7kt8ucn4m6yWnxET8sYg9GQXfr5YTDbREW",
 				name: "Elemenix #022",
 				file: "Elemenix_022.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -818,6 +909,7 @@
 				json: "QmYFPfjq2FtefFoLAphk2CfyoVVa2REJZEuRirTvL3G4DD",
 				name: "Elemenix #023",
 				file: "Elemenix_023.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -826,6 +918,7 @@
 				json: "QmaZTFviBUPQqYF4C8ntyFAmnbvwUsqAkzfzA1nYKaL9uZ",
 				name: "Elemenix #024",
 				file: "Elemenix_024.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -834,6 +927,7 @@
 				json: "QmeW3bKbkZmiVJQ69njEzjUun2bq4hdBZHcqwsJZqwZcKC",
 				name: "Elemenix #025",
 				file: "Elemenix_025.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -842,6 +936,7 @@
 				json: "QmS6RST7cPzXCBq758cxddyJoZC4bTyV9ccdErELc4GBwm",
 				name: "Elemenix #026",
 				file: "Elemenix_026.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -850,6 +945,7 @@
 				json: "QmevKcg7n9AueVaSJsrMhArSkFYHnMt2LPiqScfZ9ir5gp",
 				name: "Elemenix #027",
 				file: "Elemenix_027.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -858,6 +954,7 @@
 				json: "Qmb6MJiRXuxo8x5guZYEiCjrgKCJ6UuaaQzENBSgNXh6EB",
 				name: "Elemenix #028",
 				file: "Elemenix_028.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -866,6 +963,7 @@
 				json: "Qme7Cyf7yebawqZDisxHnjBsMmHYZkTJVve1pRQMQoXQ2f",
 				name: "Elemenix #029",
 				file: "Elemenix_029.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -874,6 +972,7 @@
 				json: "QmZZQo9KYQLFXmvSBFRNHgSadMS8nMRWFgCHoSsKaA4ouW",
 				name: "Elemenix #030",
 				file: "Elemenix_030.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -882,6 +981,7 @@
 				json: "QmZ1TGHQMej4Gf2b1Fy33V8c7fT5dQJnCws2fJtrrMEyhE",
 				name: "Elemenix #031",
 				file: "Elemenix_031.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -890,6 +990,7 @@
 				json: "QmWPRcJscXqFbLCg7a4bS6qNnGWZ6JvALzCnSTcG57Qouh",
 				name: "Elemenix #032",
 				file: "Elemenix_032.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -898,6 +999,7 @@
 				json: "QmUqbUtDrWDuVFo9SfMFwk1R5nfi18S1jw1zNTrpdQEUse",
 				name: "Elemenix #033",
 				file: "Elemenix_033.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -906,6 +1008,7 @@
 				json: "QmVXr33wbMgpQnvexCnXBRoyJCJEiarcgCqYjQ3LqiyqE9",
 				name: "Elemenix #034",
 				file: "Elemenix_034.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -914,6 +1017,7 @@
 				json: "QmZbD1TuLGH5a3pgGQhwtoxex5eBhrTEoRW6vFZoNSXLwj",
 				name: "Elemenix #035",
 				file: "Elemenix_035.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -922,6 +1026,7 @@
 				json: "QmapdfHDwupjmjJi9S8EfoF9SKMUvHpw1Tc3QwBEL2JQs9",
 				name: "Elemenix #036",
 				file: "Elemenix_036.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -930,6 +1035,7 @@
 				json: "Qmco5HUMGL31B9DsJ5hm2AJ7jfvWdbCkF6QWciMDkzG62F",
 				name: "Elemenix #037",
 				file: "Elemenix_037.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -938,6 +1044,7 @@
 				json: "QmdzPFpc6XDBHTTtZq4c125Mre1rAWyhVbNx8H5MrNUsPb",
 				name: "Elemenix #038",
 				file: "Elemenix_038.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -946,6 +1053,7 @@
 				json: "QmbbA1kDDc7AshKc7krDewQoX7Ww492C6b9gwBWjed7xhF",
 				name: "Elemenix #039",
 				file: "Elemenix_039.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -954,6 +1062,7 @@
 				json: "QmYgBQbr5RLyLQtmnn9vE5ZHRd6JLSxrQ8821sMsr6B2FG",
 				name: "Elemenix #040",
 				file: "Elemenix_040.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -962,6 +1071,7 @@
 				json: "Qmbt1QvA12QqwAFhab7WZXH5i6ct4W3rLbXgJJBFaCEVVj",
 				name: "Elemenix #041",
 				file: "Elemenix_041.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -970,6 +1080,7 @@
 				json: "QmbEkU1k36ioeHhCmaLhiV8gqz9PvnKfVJFcwYiEyfe9mD",
 				name: "Elemenix #042",
 				file: "Elemenix_042.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -978,6 +1089,7 @@
 				json: "QmTf57XtKtF53XqJ6t5JemRM9FBYT4yopRzUneTSXgQ3HB",
 				name: "Elemenix #043",
 				file: "Elemenix_043.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -986,6 +1098,7 @@
 				json: "QmcC7ead3RUiwM8x5NmbXJc8CC4UFYkHnxoS3BGH2QS9TE",
 				name: "Elemenix #044",
 				file: "Elemenix_044.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -994,6 +1107,7 @@
 				json: "QmSZsX7ELEw8yoGntTgUic591Cc9xHDQFZJBBgE5CRm5rk",
 				name: "Elemenix #045",
 				file: "Elemenix_045.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1002,6 +1116,7 @@
 				json: "QmRqZzWTdU6H6PKLzEhhMy5sow7SRp47e6G6zygF9HKXUW",
 				name: "Elemenix #046",
 				file: "Elemenix_046.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1010,6 +1125,7 @@
 				json: "Qmehkz2NvWM5SqxGkRUcAwFxsgbSv9JkZJsU6Eb4WqiQpb",
 				name: "Elemenix #047",
 				file: "Elemenix_047.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1018,6 +1134,7 @@
 				json: "QmTNvmg9VPrvTrgx8efVBm2vPjskPbmhWy2hBVvEscz7Bb",
 				name: "Elemenix #048",
 				file: "Elemenix_048.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1026,6 +1143,7 @@
 				json: "QmQrRCsn1eQ72KTpWGv4Z4pFRQmjSYoYM6bmnbRvoCDS1X",
 				name: "Elemenix #049",
 				file: "Elemenix_049.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1034,6 +1152,7 @@
 				json: "QmV6o77LHiLU4YQJkSRbKUmPZNadms8vcGZPkt7xaZax6H",
 				name: "Elemenix #050",
 				file: "Elemenix_050.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1042,6 +1161,7 @@
 				json: "QmfNfYEwNzQpzcJmzA5QfttKPAxVbGycbzj7UR5e6tzTYc",
 				name: "Elemenix #051",
 				file: "Elemenix_051.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1050,6 +1170,7 @@
 				json: "QmYtK5ipykH3RCxfUSKn6kC8H2QaJbk5JpumtRdgAU3w3i",
 				name: "Elemenix #052",
 				file: "Elemenix_052.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1058,6 +1179,7 @@
 				json: "QmTyRWrFsZ4DeKNsYvHr9HQwqUxSyromsX8huAQ3BiqmDN",
 				name: "Elemenix #053",
 				file: "Elemenix_053.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1066,6 +1188,7 @@
 				json: "QmWcvJecqyurtzTaf9VpoUFCDdRHC5D3Qkti1W8UHVNAaa",
 				name: "Elemenix #054",
 				file: "Elemenix_054.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1074,6 +1197,7 @@
 				json: "QmSMe1JayZ1sicA6RbsHeoRuN5V8iEzwvDG95ieeySg1ki",
 				name: "Elemenix #055",
 				file: "Elemenix_055.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1082,6 +1206,7 @@
 				json: "QmNwrJiuBQWbqMisvoM4JPtCvxKE3h3yuT1YPDGJLxqRbX",
 				name: "Elemenix #056",
 				file: "Elemenix_056.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1090,6 +1215,7 @@
 				json: "QmWxVfjeJphRjnd5d8mkwoywP5ZYjiNjNpd7pKQCAYsG51",
 				name: "Elemenix #057",
 				file: "Elemenix_057.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1098,6 +1224,7 @@
 				json: "QmSmeGxgyi95ZFwg5iG9HnF7gmEg5qstN2caxcaKb1PcWw",
 				name: "Elemenix #058",
 				file: "Elemenix_058.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1106,6 +1233,7 @@
 				json: "Qmabu4Z1SphU3yfJnvxLa4yywB1CqMu1ZBngK9GHnxQmUL",
 				name: "Elemenix #059",
 				file: "Elemenix_059.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1114,6 +1242,7 @@
 				json: "QmaxLVTDocuX7fXHRnhBUykWEAmKwJzNYGqvMngFhgmKQC",
 				name: "Elemenix #060",
 				file: "Elemenix_060.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1122,6 +1251,7 @@
 				json: "QmTnJuAxm5avvK1od9dePndHE79ERJAhxkCGeh4GwDNyyJ",
 				name: "Elemenix #061",
 				file: "Elemenix_061.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1130,6 +1260,7 @@
 				json: "Qmaj8YThtNVrz8VMvKzsj2v7S2k5qQ9ntQbr5BoQdGyL4K",
 				name: "Elemenix #062",
 				file: "Elemenix_062.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1138,6 +1269,7 @@
 				json: "QmfL1NE1xK9cGGmTKYs8XBrsBcq8FkV9nyAj35werVVWh1",
 				name: "Elemenix #063",
 				file: "Elemenix_063.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1146,6 +1278,7 @@
 				json: "QmXkyPUv61u1PCeUJ6tYz1bPCf1WNjzyqf3ZHNdyu8R86n",
 				name: "Elemenix #064",
 				file: "Elemenix_064.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1154,6 +1287,7 @@
 				json: "QmcrMWo7FoL7DDii1PjKbkLpo8VJceVtJ3d7B2QFh2t2wx",
 				name: "Elemenix #065",
 				file: "Elemenix_065.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1162,6 +1296,7 @@
 				json: "QmQ6r1fpk4F9oniBScpFieyGSoTC4DsWKoiq39fjNiJUcG",
 				name: "Elemenix #066",
 				file: "Elemenix_066.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1170,6 +1305,7 @@
 				json: "QmYvFfuujL9XYH2eXEGdkY6mBdPCzEZrhnYH9xJEMcbqAk",
 				name: "Elemenix #067",
 				file: "Elemenix_067.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1178,6 +1314,7 @@
 				json: "QmTsw7SFsoarrMxEoMRwzV2zs8mFqbuKqfHmuzkHt3hHNh",
 				name: "Elemenix #068",
 				file: "Elemenix_068.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1186,6 +1323,7 @@
 				json: "QmcHMtDSYD2o4mi2K7CUdqQZ5AjeNALTRQTovMyVFk6HiA",
 				name: "Elemenix #069",
 				file: "Elemenix_069.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1194,6 +1332,7 @@
 				json: "QmWX25yFntJaX48TXiXd9HV75o51MMNuvPm9rcYRmGs4rQ",
 				name: "Elemenix #070",
 				file: "Elemenix_070.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1202,6 +1341,7 @@
 				json: "QmQdghY9ZzfAdtrvvchazEUiD3Pskxs5i8sZRuumCsNoX3",
 				name: "Elemenix #071",
 				file: "Elemenix_071.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1210,6 +1350,7 @@
 				json: "QmRKJiydABf26K5X6fRQQLP7cwq3LQS5RUe38Dh1Kkgfq9",
 				name: "Elemenix #072",
 				file: "Elemenix_072.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1218,6 +1359,7 @@
 				json: "QmQJy99ZnF5FEFwe9W23bAzg4ArWjeZGssizRh9Rbsr62w",
 				name: "Elemenix #073",
 				file: "Elemenix_073.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1226,6 +1368,7 @@
 				json: "QmSxxJyjv42BRu65vP19Ld1oQMak1gLyDQHyS8LL2Ci3nE",
 				name: "Elemenix #074",
 				file: "Elemenix_074.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1234,6 +1377,7 @@
 				json: "QmdVZX2Vyw79Hp7EUGbPb6Rqwi3nooWA2nMfsJ7Z6SLtkS",
 				name: "Elemenix #075",
 				file: "Elemenix_075.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1242,6 +1386,7 @@
 				json: "QmYQdfBr4Sm5e4yZhABd8jvgnnYgCB1qttD1J3FYkMDSP9",
 				name: "Elemenix #076",
 				file: "Elemenix_076.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1250,6 +1395,7 @@
 				json: "QmUkAQUto1G3C98Emjzr4sTyxpFgmjUTBYpKmmkUgsvuM7",
 				name: "Elemenix #077",
 				file: "Elemenix_077.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1258,6 +1404,7 @@
 				json: "QmcUWAMYjHwW6AUY7i9RcAZyehdZVDYk6mBcwvqjfnLVfN",
 				name: "Elemenix #078",
 				file: "Elemenix_078.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1266,6 +1413,7 @@
 				json: "QmPjreS6dJpnusNGg8HQUe4m39LEUsjX89c3aaCvKa9u8S",
 				name: "Elemenix #079",
 				file: "Elemenix_079.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1274,6 +1422,7 @@
 				json: "QmWZVae1taNNec1M63pwqbBVsCVmyMkUiebUJ8GG6UnFYc",
 				name: "Elemenix #080",
 				file: "Elemenix_080.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1282,6 +1431,7 @@
 				json: "QmNtjqGZbwaGLueenoE9L3DRCNyGRZ6K36XN9w9Ln9ihd8",
 				name: "Elemenix #081",
 				file: "Elemenix_081.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1290,6 +1440,7 @@
 				json: "QmcCR86x8iM8ZrrMm7VqomjjLG6BZvuDwx92o7mwg8UNuV",
 				name: "Elemenix #082",
 				file: "Elemenix_082.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1298,6 +1449,7 @@
 				json: "QmS2HBxdbUorEQrDrkMhkr13yq9yeua7sBt4WR4AUo8qrL",
 				name: "Elemenix #083",
 				file: "Elemenix_083.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1306,6 +1458,7 @@
 				json: "QmXMeejDuErth5jaoVNTi4bJsxohwFVR5yMQeFgP3U2PMW",
 				name: "Elemenix #084",
 				file: "Elemenix_084.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1314,6 +1467,7 @@
 				json: "Qmemqn6NLd7jZhHjmuh6ZGnmpXmgaxmNewL7znSAxQfqLx",
 				name: "Elemenix #085",
 				file: "Elemenix_085.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1322,6 +1476,7 @@
 				json: "QmTPxbPpYVPUZAbK9uVUngMgPwT2uVUAt6vBwFaQhAXZdd",
 				name: "Elemenix #086",
 				file: "Elemenix_086.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1330,6 +1485,7 @@
 				json: "QmdVDLMNHHhSgCHrxFsNBX9aCXjgUwPEKbX95h3LNzpc5J",
 				name: "Elemenix #087",
 				file: "Elemenix_087.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1338,6 +1494,7 @@
 				json: "QmacwiG9ozKojBwtkheA2YzNobkWpkjaiEvWn2UPNkYvxZ",
 				name: "Elemenix #088",
 				file: "Elemenix_088.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1346,6 +1503,7 @@
 				json: "QmfBb8hZ5VyP8byfvoHm8vjpKoQjUjzrcquT4YvY3JnrT6",
 				name: "Elemenix #089",
 				file: "Elemenix_089.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1354,6 +1512,7 @@
 				json: "QmZANhRhH72qXpLYuYtN56ZQECKyYBENF1si1qKDFBGumM",
 				name: "Elemenix #090",
 				file: "Elemenix_090.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1362,6 +1521,7 @@
 				json: "Qmbn2GRKFJgq35ES9FhdyRmpepskz8kyDV1frznRu96Zfx",
 				name: "Elemenix #091",
 				file: "Elemenix_091.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1370,6 +1530,7 @@
 				json: "QmQJqBGEtdTewsM16ApmAXzGhZE55o1evPusMUwT6L59eh",
 				name: "Elemenix #092",
 				file: "Elemenix_092.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1378,6 +1539,7 @@
 				json: "Qmf4MGW6qCLTvVpbSpimGC3j4eNXyGsooZUkB2b5ckYwnL",
 				name: "Elemenix #093",
 				file: "Elemenix_093.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1386,6 +1548,7 @@
 				json: "QmQirLUitf7hV3xtLckEML43b353iWZRLQpAJxbxxAmvM4",
 				name: "Elemenix #094",
 				file: "Elemenix_094.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1394,6 +1557,7 @@
 				json: "QmaGZ4CDBav6S9K2BocuvgJtWrHtCtMLmFcg6Gy8ecKJcA",
 				name: "Elemenix #095",
 				file: "Elemenix_095.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1402,6 +1566,7 @@
 				json: "QmYircrpdPCXfTT4huLHJvTrBkT4z3HikNTEQdVkAEcYiX",
 				name: "Elemenix #096",
 				file: "Elemenix_096.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1410,6 +1575,7 @@
 				json: "QmVqFHQ46tr8YFrFj2dWcBu6Xp5SZKHCitrXAUWtWW4axH",
 				name: "Elemenix #097",
 				file: "Elemenix_097.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1418,6 +1584,7 @@
 				json: "QmSktzBxR71ro4GBQchzUYQDfKCnzNqXLMske1AMbeMKHK",
 				name: "Elemenix #098",
 				file: "Elemenix_098.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1426,6 +1593,7 @@
 				json: "QmWX77cxnrced48AjKzgVqUfofyQQ6tWHSyB1wi32CdWhM",
 				name: "Elemenix #099",
 				file: "Elemenix_099.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1434,6 +1602,7 @@
 				json: "QmdbLmp5ypcwb5KdvvDxSfGC6h5PNyfADDZW76gHxCNKaT",
 				name: "Elemenix #100",
 				file: "Elemenix_100.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1442,6 +1611,7 @@
 				json: "QmT4rQHk12ZiV3QRrEW87chjt2VXzGdVd4oJCkxKDCZhT1",
 				name: "Elemenix #101",
 				file: "Elemenix_101.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1450,6 +1620,7 @@
 				json: "QmVN7mioeBD7NgzKQ97waMgharmuGCEhyxpDBGykwvEbC5",
 				name: "Elemenix #102",
 				file: "Elemenix_102.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1458,6 +1629,7 @@
 				json: "QmZYZvpu78fWY7ECDfEeYpGw4JMdFJ2xLZsi6uWnCGHUvW",
 				name: "Elemenix #103",
 				file: "Elemenix_103.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1466,6 +1638,7 @@
 				json: "QmXCaXZcMLKoYAPvkdMpPr6YrbsTGAFYk6EKTt3bp3AYZv",
 				name: "Elemenix #104",
 				file: "Elemenix_104.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1474,6 +1647,7 @@
 				json: "QmV6QRHvjMPQsxPHyDJkb469SWYr7f4YCxG1mVGszbhgmq",
 				name: "Elemenix #105",
 				file: "Elemenix_105.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1482,6 +1656,7 @@
 				json: "QmV9VdzjNfFrviZLYr8tKZtBJEY7NDtdQSvpmfmFmtFDgA",
 				name: "Elemenix #106",
 				file: "Elemenix_106.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1490,6 +1665,7 @@
 				json: "QmbVC79hMknpfy2kpcMRcMBrEseTR1t2MG4V7Vuq2M8bmx",
 				name: "Elemenix #107",
 				file: "Elemenix_107.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1498,6 +1674,7 @@
 				json: "QmZ9fwa6w68TXNWQjzagFjNJwc9eDzqTM9j3e8SWLyDD4s",
 				name: "Elemenix #108",
 				file: "Elemenix_108.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1506,6 +1683,7 @@
 				json: "QmRVpTBiF2x5mWRFVsz4hxsgTY8sCw6g6GcPpoZcNd6HCR",
 				name: "Elemenix #109",
 				file: "Elemenix_109.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1514,6 +1692,7 @@
 				json: "QmP7CD66S3jV42yxmwudtA58wNBbataoxuVXz4kqjVHcav",
 				name: "Elemenix #110",
 				file: "Elemenix_110.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1522,6 +1701,7 @@
 				json: "Qmemcni42HKJyXhZBWHhbhFTZHunuLoKw8HcBwKSK6Y1Qx",
 				name: "Elemenix #111",
 				file: "Elemenix_111.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1530,6 +1710,7 @@
 				json: "QmYEqb48VKdozZYCQpjrMBC9qPrdfT1q3PJbPKXau9BFP2",
 				name: "Elemenix #112",
 				file: "Elemenix_112.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1538,6 +1719,7 @@
 				json: "QmX39iUmW9eBBBXSkzVoBAnEFAzNkbBi26hfvbheaZ7StS",
 				name: "Elemenix #113",
 				file: "Elemenix_113.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1546,6 +1728,7 @@
 				json: "QmYdcMJh4TgCsy1VKKHhSG8be4maTBouPbgxX9M576LWjC",
 				name: "Elemenix #114",
 				file: "Elemenix_114.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1554,6 +1737,7 @@
 				json: "QmVwXttmmUKrHhy964DaPNRUpK2AWRSyw6EQkoQawBq6Zn",
 				name: "Elemenix #115",
 				file: "Elemenix_115.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1562,6 +1746,7 @@
 				json: "Qmd2XPkCGa4NphkijbpMQGSA72jHGwp9H5ySwwSYs5UKug",
 				name: "Elemenix #116",
 				file: "Elemenix_116.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1570,6 +1755,7 @@
 				json: "QmNpj399vgQHeE8Le3XotYdyNhXetUQHsC71NkvG8rkyAq",
 				name: "Elemenix #117",
 				file: "Elemenix_117.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1578,6 +1764,7 @@
 				json: "QmPFNNMPeZgNYf3fvPfDisUg6MZ7WKjPirZuxgyTLWHEwu",
 				name: "Elemenix #118",
 				file: "Elemenix_118.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1586,6 +1773,7 @@
 				json: "QmfQyDn5751BgsKX8Nmngk8ZQJFf5nqeRTRKVX3vit5V1y",
 				name: "Elemenix #119",
 				file: "Elemenix_119.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1594,6 +1782,7 @@
 				json: "QmTV1D63BBusk9pVCMaiFLpnjQSgm6jpsZq9UTSfDipCA5",
 				name: "Elemenix #120",
 				file: "Elemenix_120.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1602,6 +1791,7 @@
 				json: "QmXkA41SBFWh5hrnCeR9b82Ubp9b8mpMnzxXY9EsQB7sPG",
 				name: "Elemenix #121",
 				file: "Elemenix_121.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1610,6 +1800,7 @@
 				json: "QmeWLtmLLc6emtsZxVpAGDZL375e1KmmaSR9uR1Goqrn2t",
 				name: "Elemenix #122",
 				file: "Elemenix_122.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1618,6 +1809,7 @@
 				json: "QmQDTxdgLU8zXRMmEpNT1wpLj2RTTe4ZoMn38Eq3xenxQY",
 				name: "Elemenix #123",
 				file: "Elemenix_123.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1626,6 +1818,7 @@
 				json: "QmRBz4knTXzzQAWx9t5xzXV5hu4LVZgFW8HSJaQFmvWuwj",
 				name: "Elemenix #124",
 				file: "Elemenix_124.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1634,6 +1827,7 @@
 				json: "QmbACEkAjGG5rKSeqWxztAcGjTZpfMB6HF1fkdz9mGSXSh",
 				name: "Elemenix #125",
 				file: "Elemenix_125.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1642,6 +1836,7 @@
 				json: "QmYdyX1TU57CGN7rRY1Ya2RV29MsxQ8s6nPqd2QMVYrffx",
 				name: "Elemenix #126",
 				file: "Elemenix_126.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1650,6 +1845,7 @@
 				json: "QmVwzHCuveK6k3KzQSPN462GiVrySa1CUPZHSwc5ZShgAV",
 				name: "Elemenix #127",
 				file: "Elemenix_127.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1658,6 +1854,7 @@
 				json: "QmPL2tTBU6ydsAV6GnUnba8NPSoKtZSf6ajF7srybrw1zS",
 				name: "Elemenix #128",
 				file: "Elemenix_128.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1666,6 +1863,7 @@
 				json: "QmV3sAh4T7NojCKCjfmwkYWv6Ruin3ztCVGsYQM6xutUzX",
 				name: "Elemenix #129",
 				file: "Elemenix_129.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1674,6 +1872,7 @@
 				json: "QmRXejBPm9EoXFWuGq1N4TMyZ8x7MZKCY9CatFKBoRoXt8",
 				name: "Elemenix #130",
 				file: "Elemenix_130.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1682,6 +1881,7 @@
 				json: "QmWRRd9L5HKCCEEY4Ar3ngnmhxCTPnoBpPMjh5VJ4E7Dhn",
 				name: "Elemenix #131",
 				file: "Elemenix_131.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1690,6 +1890,7 @@
 				json: "QmUUaHtEed9LPHjbZwK8VsY1C4mDM18L62BBywZ4buCCp8",
 				name: "Elemenix #132",
 				file: "Elemenix_132.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1698,6 +1899,7 @@
 				json: "QmPD5BsNj1HTZgmzfLJUgPG88dLFNm5Q1LEjLMAtWrMTt6",
 				name: "Elemenix #133",
 				file: "Elemenix_133.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1706,6 +1908,7 @@
 				json: "QmXLBgDfyhzJVmGqgVfquaE9G6aSNmpBBcBn12K85jq8xb",
 				name: "Elemenix #134",
 				file: "Elemenix_134.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1714,6 +1917,7 @@
 				json: "QmQ3b5FRtJBPtoDxEyc57eVdJHvDcnTmPhrKfqfwrrn1G7",
 				name: "Elemenix #135",
 				file: "Elemenix_135.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1722,6 +1926,7 @@
 				json: "QmRBUC374MAhCVmaEsUjwvscbsVedykjM1pFQT531AW88N",
 				name: "Elemenix #136",
 				file: "Elemenix_136.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1730,6 +1935,7 @@
 				json: "Qmbxj7kNLD74wqebjf7Wx8AhJdRYxr4UhRBv8fU76yqPUX",
 				name: "Elemenix #137",
 				file: "Elemenix_137.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1738,6 +1944,7 @@
 				json: "QmNqYViJJj4oZoydg7EHQD4GhiEerz8gVWP8EZfmuwqwAr",
 				name: "Elemenix #138",
 				file: "Elemenix_138.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1746,6 +1953,7 @@
 				json: "QmSnnwKfsFFjCtXQcGwv2WPEFxsraUECKg42qAevpUhHKv",
 				name: "Elemenix #139",
 				file: "Elemenix_139.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1754,6 +1962,7 @@
 				json: "QmPVeHcyAbcXLVdMyo5hnaFx84GT96FGLvXiVvNVXj7wV1",
 				name: "Elemenix #140",
 				file: "Elemenix_140.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1762,6 +1971,7 @@
 				json: "QmNtvy1heFZ1nbQTiq2MTwXzznASzFPiCWvUXrSveHjDo4",
 				name: "Elemenix #141",
 				file: "Elemenix_141.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1770,6 +1980,7 @@
 				json: "QmbEWcXkN7jEpDwyxFZkLRgZkfJFhy5jmzF4RdvAN4Vozx",
 				name: "Elemenix #142",
 				file: "Elemenix_142.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1778,6 +1989,7 @@
 				json: "QmQ2xHMVwvEEUeU1VgkteMBepC7c3HRHvbXyJy4S9rVk3g",
 				name: "Elemenix #143",
 				file: "Elemenix_143.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1786,6 +1998,7 @@
 				json: "QmPgKG4PK5k2fEYME5NXr1gXSYaNKmwzqDxnkt4X6NSwyT",
 				name: "Elemenix #144",
 				file: "Elemenix_144.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1794,6 +2007,7 @@
 				json: "QmXi6KnpkQAbvmZ83fUPPcswN9kPGDDMwLL8oFNMqiM87Z",
 				name: "Elemenix #145",
 				file: "Elemenix_145.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1802,6 +2016,7 @@
 				json: "QmeyXGb2DbtMWh7pqkiCv54qoqawiCPfqdngDSSTiQszdc",
 				name: "Elemenix #146",
 				file: "Elemenix_146.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1810,6 +2025,7 @@
 				json: "QmayWezTNL1PSnECtkETYpt3Y4pLto9LBzrUgNfXwqf3pt",
 				name: "Elemenix #147",
 				file: "Elemenix_147.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1818,6 +2034,7 @@
 				json: "QmZGm9yn747QRL6bWeEpdijswe5WqZcQMEq1B9PyczPJDB",
 				name: "Elemenix #148",
 				file: "Elemenix_148.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1826,6 +2043,7 @@
 				json: "QmYHWQrVskxKR9Rbptpv4uE5GPB22i28hQYPipmhnE7HRp",
 				name: "Elemenix #149",
 				file: "Elemenix_149.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1834,6 +2052,7 @@
 				json: "QmTXv2TYQxKAZcNoowHTVQ2VSUnVoubugd1apssphvjz7k",
 				name: "Elemenix #150",
 				file: "Elemenix_150.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1842,6 +2061,7 @@
 				json: "QmUAcvUHZ6kT5iBFkNFWJeiRpsjj6D7iLhnrqgkys4EXH3",
 				name: "Elemenix #151",
 				file: "Elemenix_151.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1850,6 +2070,7 @@
 				json: "QmQGfS1xsuUEPmtJLQJBqsnkAY8QtFnVAL87oyL52zFLTN",
 				name: "Elemenix #152",
 				file: "Elemenix_152.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1858,6 +2079,7 @@
 				json: "QmZe23pwA3bfMZWZXymFajpk85Fm1LP6F8kLL5EuhQxatH",
 				name: "Elemenix #153",
 				file: "Elemenix_153.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1866,6 +2088,7 @@
 				json: "QmRvdf9D2eddC8iH4zbSkwuvT8tsxu5Y5eWFNFQhiLvNvd",
 				name: "Elemenix #154",
 				file: "Elemenix_154.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1874,6 +2097,7 @@
 				json: "QmZMKUV7sLsXvmCpsKRnpBjPDvmVKMfsS2G5QEBHjkwG1V",
 				name: "Elemenix #155",
 				file: "Elemenix_155.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1882,6 +2106,7 @@
 				json: "QmUswQc2Cuw1US2h6x5uQ6AwMCD8D1PYxWm8ivj4sTsXbx",
 				name: "Elemenix #156",
 				file: "Elemenix_156.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1890,6 +2115,7 @@
 				json: "QmUf35BBBJz1qjXnZyXqVDNfWhX4jFfSxQ4XMtYc4VHteo",
 				name: "Elemenix #157",
 				file: "Elemenix_157.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1898,6 +2124,7 @@
 				json: "Qmexn5Ww7k3Y5FVHbkV7yY5AXgN5rGzQEsaWxfbH4hnv2A",
 				name: "Elemenix #158",
 				file: "Elemenix_158.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1906,6 +2133,7 @@
 				json: "QmbHsAe7nFMRiMNzo7QNqcckVFC2btuSXdJnWpWvzSk3Cs",
 				name: "Elemenix #159",
 				file: "Elemenix_159.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1914,6 +2142,7 @@
 				json: "QmSRMmwYHFUk4dNAVgE33Xsczx3BrNTRbVXFdoXLeZWwTy",
 				name: "Elemenix #160",
 				file: "Elemenix_160.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1922,6 +2151,7 @@
 				json: "QmUCCu2GsiX3ao6yk5yvNGkLmCnesYM9BQ4MWMd5KmdduC",
 				name: "Elemenix #161",
 				file: "Elemenix_161.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1930,6 +2160,7 @@
 				json: "QmRqV1iRcpveYQtQcQ343QLWHkmpoXNngFRfnhhpLZ8eoA",
 				name: "Elemenix #162",
 				file: "Elemenix_162.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1938,6 +2169,7 @@
 				json: "QmZudRnr7Mz5EfGFxwYgaytfTdoLrgDTPgvhvE2TQ2B5wM",
 				name: "Elemenix #163",
 				file: "Elemenix_163.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1946,6 +2178,7 @@
 				json: "QmZDvoqWLV78TEhqgrtsZzzkBqPJ13z9hNDo1aLqQknij7",
 				name: "Elemenix #164",
 				file: "Elemenix_164.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1954,6 +2187,7 @@
 				json: "QmRHkBdDQ8Ta8ZvNG6qpjQJviXeFL5xiDdceRTyYXh8Pq2",
 				name: "Elemenix #165",
 				file: "Elemenix_165.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1962,6 +2196,7 @@
 				json: "QmNWvUkEDETBitPyDBhGC4NWRs87gomRywA6uv9YCTSSFr",
 				name: "Elemenix #166",
 				file: "Elemenix_166.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1970,6 +2205,7 @@
 				json: "QmXZMSuBnWGQx2DnfnTTKWztFgwxs5s5BhiYdLBTR5gH7Q",
 				name: "Elemenix #167",
 				file: "Elemenix_167.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1978,6 +2214,7 @@
 				json: "QmSzmjmX5K4H7EL4wwnBhqG3Nmb9SzMmbYMSQrqXSzTAYC",
 				name: "Elemenix #168",
 				file: "Elemenix_168.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1986,6 +2223,7 @@
 				json: "QmWnnaBuqPTLFTbetNrgKGnNZF2mzQpcBu6fA8Pd3keMgR",
 				name: "Elemenix #169",
 				file: "Elemenix_169.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -1994,6 +2232,7 @@
 				json: "QmZuBJWQy6CNJFgJ34pNykorSmE2yXrsQizX4NuUyxWqmy",
 				name: "Elemenix #170",
 				file: "Elemenix_170.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2002,6 +2241,7 @@
 				json: "QmfBhwGntf9SAsESY3XeY8kLpXFTKor7YRbzro7UzCo46m",
 				name: "Elemenix #171",
 				file: "Elemenix_171.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2010,6 +2250,7 @@
 				json: "Qme52VEGqTXHz15LrQrr9JDCCCGPNsizCY3ahkE3rWsgzL",
 				name: "Elemenix #172",
 				file: "Elemenix_172.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2018,6 +2259,7 @@
 				json: "QmUmm4WCpXXKHG9EBjcMuXkdJ4exh96ruk2Z2SHKQpWNDW",
 				name: "Elemenix #173",
 				file: "Elemenix_173.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2026,6 +2268,7 @@
 				json: "QmfYjepWrw3eqAT7FeKRRtH6Xdux35RBAYm4UTK3TdjCtb",
 				name: "Elemenix #174",
 				file: "Elemenix_174.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2034,6 +2277,7 @@
 				json: "QmURTCMvmF3AbxBkApgpTRoCmfCYupFi3hHSfiXXaRe1BP",
 				name: "Elemenix #175",
 				file: "Elemenix_175.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2042,6 +2286,7 @@
 				json: "QmRWgY8AbmzwPvtQpPMqak1h2mM9YBv1s3MjMVtBs7Wshm",
 				name: "Elemenix #176",
 				file: "Elemenix_176.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2050,6 +2295,7 @@
 				json: "QmTeCWEaNXFs1BP2RiYnj4YCu4dCMcCGz3VMnsrwB6mUxB",
 				name: "Elemenix #177",
 				file: "Elemenix_177.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2058,6 +2304,7 @@
 				json: "QmfMKq6imgoPAjgX9kiruVX8qb9vt9bLv6aFNSn2K2BnPi",
 				name: "Elemenix #178",
 				file: "Elemenix_178.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2066,6 +2313,7 @@
 				json: "QmXN2g32EuP7HjmrAWPiHUu2vYDnhVpGbbSZWuT6zkmi4J",
 				name: "Elemenix #179",
 				file: "Elemenix_179.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2074,6 +2322,7 @@
 				json: "QmX4CvMGEo2xmYoZ9BKJ7esY4xNLJ5ARw7BKK8wry7GurB",
 				name: "Elemenix #180",
 				file: "Elemenix_180.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2082,6 +2331,7 @@
 				json: "QmWTm1YWLTXnA61PRVzVGECdKQ9ABvabPGxSY9sbomY9hG",
 				name: "Elemenix #181",
 				file: "Elemenix_181.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2090,6 +2340,7 @@
 				json: "QmbbvZJaWcJHL1c7aZDNbuPqUGJj8gkyBcHgcKWMpyKxCx",
 				name: "Elemenix #182",
 				file: "Elemenix_182.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2098,6 +2349,7 @@
 				json: "QmSamZjhWmSsbjtCSQ5oKRfx3NuGu4is1AZAULoPPDtMHy",
 				name: "Elemenix #183",
 				file: "Elemenix_183.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2106,6 +2358,7 @@
 				json: "QmZtuSRjTcnRWRGHHawTwzsZYmYV7bedAQrWMkqQjdxTRc",
 				name: "Elemenix #184",
 				file: "Elemenix_184.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2114,6 +2367,7 @@
 				json: "QmXFbsWeKPsQTiDZ154RfBXyWMEoJbyQLAuPN3gDY5CZKb",
 				name: "Elemenix #185",
 				file: "Elemenix_185.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2122,6 +2376,7 @@
 				json: "QmPDkPiKYuS4CKqpriqpezBEvwFmhMedqgsUA514f7sMky",
 				name: "Elemenix #186",
 				file: "Elemenix_186.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2130,6 +2385,7 @@
 				json: "QmbMDg1NB17xbz9hbpGTiA46WbC1oQ6tRtm2XzfhgyqYDw",
 				name: "Elemenix #187",
 				file: "Elemenix_187.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2138,6 +2394,7 @@
 				json: "Qmdhcd5NzTVpGdCgFRW5VwSg6zYEGd3EubCoiWbJ2pRdya",
 				name: "Elemenix #188",
 				file: "Elemenix_188.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2146,6 +2403,7 @@
 				json: "QmbewUfnsM75gXmnvrAGFwWAzHATaPNobAapXD59iBd2kF",
 				name: "Elemenix #189",
 				file: "Elemenix_189.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2154,6 +2412,7 @@
 				json: "QmRig74KKM9qdqS9SqTkjk86gsTTC6Ehfo1HQrJxfAnQrP",
 				name: "Elemenix #190",
 				file: "Elemenix_190.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2162,6 +2421,7 @@
 				json: "QmbLvnz4LN98vMwocYo1o1pdKMmYJm4S9Jb4KHXt2YTi7D",
 				name: "Elemenix #191",
 				file: "Elemenix_191.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2170,6 +2430,7 @@
 				json: "QmQJErDiay6ak8uKWGTwFmpnAK8tRHGviF5h1HGtAtaguX",
 				name: "Elemenix #192",
 				file: "Elemenix_192.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2178,6 +2439,7 @@
 				json: "QmTLBnSsfuaakQohDzKKdzp3h4u9bsuKi4Ue4yWNMuzsTj",
 				name: "Elemenix #193",
 				file: "Elemenix_193.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2186,6 +2448,7 @@
 				json: "QmQuJfb6SPGWCkWbfH4Scg4bGrUuv2oXHQZ35Bdy59qWVM",
 				name: "Elemenix #194",
 				file: "Elemenix_194.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2194,6 +2457,7 @@
 				json: "QmdDF4NEm6HxHPtkeNCFbGyboVSefABS8QnuTimctaLW2t",
 				name: "Elemenix #195",
 				file: "Elemenix_195.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2202,6 +2466,7 @@
 				json: "QmPz3yoeZkteTWrLjTiPsrnk9jjYW5JVnHCBgyuviJCGnq",
 				name: "Elemenix #196",
 				file: "Elemenix_196.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2210,6 +2475,7 @@
 				json: "Qmcz4tAvg4NN8doBAZsFtiNC3BdmC7Q6jUADcsowicuTSG",
 				name: "Elemenix #197",
 				file: "Elemenix_197.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2218,6 +2484,7 @@
 				json: "Qme1PqphTBYKMfutKV9eUFcLVzMNhRBUoaw7Z8TypJp9Er",
 				name: "Elemenix #198",
 				file: "Elemenix_198.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2226,6 +2493,7 @@
 				json: "QmchmXqrin81gtmtWBHQFpksQcsfgtekKy5KNsEBavTyvm",
 				name: "Elemenix #199",
 				file: "Elemenix_199.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2234,6 +2502,7 @@
 				json: "QmbsAp1zfBKrNhrizAixWBc9oxastGqBxVT7yCt7zoeeW2",
 				name: "Elemenix #200",
 				file: "Elemenix_200.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2242,6 +2511,7 @@
 				json: "QmQH7eokeoKwoCHLsYHxTRRCMjmSG6XfGmiH83sHGoimpx",
 				name: "Elemenix #201",
 				file: "Elemenix_201.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2250,6 +2520,7 @@
 				json: "QmPoSYCHXk1iNzjWFb8NK7xV3G3mRUpjtCDrPvQV9Bizvi",
 				name: "Elemenix #202",
 				file: "Elemenix_202.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2258,6 +2529,7 @@
 				json: "QmU5w6n2BE7TyfJQ3399RWPy7R4z4LMKMwwKWi5tv5Hsev",
 				name: "Elemenix #203",
 				file: "Elemenix_203.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2266,6 +2538,7 @@
 				json: "QmbzoCbvxtaadoBwuj86bv1FshAU7JjWU6HiJzKHWHZwR6",
 				name: "Elemenix #204",
 				file: "Elemenix_204.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2274,6 +2547,7 @@
 				json: "QmRs9wc2xGLPPbfLephTiVKe43MeAyAsEQcWqwva16wYgJ",
 				name: "Elemenix #205",
 				file: "Elemenix_205.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2282,6 +2556,7 @@
 				json: "QmY3u5qZ9c2ogDEDU2z87J2FVXWSTbaTMT1AqSCBNBsFSY",
 				name: "Elemenix #206",
 				file: "Elemenix_206.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2290,6 +2565,7 @@
 				json: "QmVpK81ZicwtxNSa4H2ngEUefK4bDgPLVqdqHmDfkP2MjK",
 				name: "Elemenix #207",
 				file: "Elemenix_207.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2298,6 +2574,7 @@
 				json: "QmUkdEm2x6TuPxscuRNqbkxXb16jtcY8h6oSKZ19GMeuCY",
 				name: "Elemenix #208",
 				file: "Elemenix_208.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2306,6 +2583,7 @@
 				json: "QmR8DVQ7jY26CyCfFckqkey25ef4EN41fM8hnK8t3gNGaX",
 				name: "Elemenix #209",
 				file: "Elemenix_209.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2314,6 +2592,7 @@
 				json: "QmXgxULWfD3bik46ug9AWczqoyiFuhhGbsWnaMMjmShUvu",
 				name: "Elemenix #210",
 				file: "Elemenix_210.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2322,6 +2601,7 @@
 				json: "QmSDZBxN9jjaSEAc3t2VwVxaDAkiNJhXZtqqBxPmhvtRgr",
 				name: "Elemenix #211",
 				file: "Elemenix_211.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2330,6 +2610,7 @@
 				json: "QmRzBwm2jZVbTtD58Fpb8jFxE2MoXm3NHG6pwExNGE9hj7",
 				name: "Elemenix #212",
 				file: "Elemenix_212.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2338,6 +2619,7 @@
 				json: "Qmd8bukZHtFFwWGnmYTBwQisQzwx4yURsb63tXdYYVumw4",
 				name: "Elemenix #213",
 				file: "Elemenix_213.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2346,6 +2628,7 @@
 				json: "QmdjfStbZnXKoNgnKQkLrzsSuRNu6e6Qvb5eA1AcVvAtBe",
 				name: "Elemenix #214",
 				file: "Elemenix_214.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2354,6 +2637,7 @@
 				json: "QmVPejuSKz8To3JS1scD65UGbmrTQz5ZZdzY6PCmx6nneb",
 				name: "Elemenix #215",
 				file: "Elemenix_215.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2362,6 +2646,7 @@
 				json: "Qmd559wWf9S24i3oNrDUcFrMSGaFkS9WfxakK2HAn13vNQ",
 				name: "Elemenix #216",
 				file: "Elemenix_216.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2370,6 +2655,7 @@
 				json: "QmSsLVL2zjMJdL2M8gUBPjPutAUBg94bfWPJh4iwZaXGdo",
 				name: "Elemenix #217",
 				file: "Elemenix_217.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2378,6 +2664,7 @@
 				json: "QmZgmvvonFEbCN5HjCV5URumfB2YR7TC5JUT4n1wC8cAQs",
 				name: "Elemenix #218",
 				file: "Elemenix_218.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2386,6 +2673,7 @@
 				json: "QmWr4zhqwGgw6uxqud8xDdi6Pq16pcSQTrT5dKjvMhpmRQ",
 				name: "Elemenix #219",
 				file: "Elemenix_219.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2394,6 +2682,7 @@
 				json: "QmRjVcpgGaGQjYdW5kQ9sQDKHEsVL7iEZEqJDFTbEt5Cjx",
 				name: "Elemenix #220",
 				file: "Elemenix_220.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2402,6 +2691,7 @@
 				json: "QmWPrPrvUhLr2VVcYo73dDSLVLeACJK9DfbmvqHahqkW1Q",
 				name: "Elemenix #221",
 				file: "Elemenix_221.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2410,6 +2700,7 @@
 				json: "QmQapxQ3CEHzcYpBr5j4Y3svJa59mFsiLJJ6ziCbdRqRAQ",
 				name: "Elemenix #222",
 				file: "Elemenix_222.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2418,6 +2709,7 @@
 				json: "QmV8XwK8ctQYC4epS7j82MYg4g1j7M9fxLGMiA2ujxW9Jx",
 				name: "Elemenix #223",
 				file: "Elemenix_223.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2426,6 +2718,7 @@
 				json: "QmWrcwcTyixf3LnCJk1akDueP8iVppLt93h3kAfUBVENZn",
 				name: "Elemenix #224",
 				file: "Elemenix_224.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2434,6 +2727,7 @@
 				json: "QmP97f5tBnmF8Nxy1sNhZpu5aXRnKu29WE62Di3MnwBkb7",
 				name: "Elemenix #225",
 				file: "Elemenix_225.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2442,6 +2736,7 @@
 				json: "QmYHgPa8FTi7VHyzt8UGrGD7MusLq9xL7XFVXsqM1EqGU1",
 				name: "Elemenix #226",
 				file: "Elemenix_226.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2450,6 +2745,7 @@
 				json: "QmUvvBMa2JkhzScHAzJHP1NHqVkWGBXfJozFWe3amfdnWU",
 				name: "Elemenix #227",
 				file: "Elemenix_227.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2458,6 +2754,7 @@
 				json: "QmbZXH57ByYTEvk94iprET8pXMDBzwRfSj345X8e6PJWak",
 				name: "Elemenix #228",
 				file: "Elemenix_228.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2466,6 +2763,7 @@
 				json: "QmeZPMKS2owr26ehQGK7yuxX53CLBr8Qukdzq6vAiPmB8a",
 				name: "Elemenix #229",
 				file: "Elemenix_229.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2474,6 +2772,7 @@
 				json: "QmeMZeGQQat6PLUzvScKYkRGWmBg5CwmMSvwkTNGAE8Tm2",
 				name: "Elemenix #230",
 				file: "Elemenix_230.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2482,6 +2781,7 @@
 				json: "QmQbkima1QgWB72XjLLCvsiftPxAxbSviHk4CGst3C73n9",
 				name: "Elemenix #231",
 				file: "Elemenix_231.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2490,6 +2790,7 @@
 				json: "QmX4juDSPoMLj4TPsfJBt9BcuGiFpmJpMynA1umWiKd3UL",
 				name: "Elemenix #232",
 				file: "Elemenix_232.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2498,6 +2799,7 @@
 				json: "Qmdid2cVoUzhBLqSHzJxodLcjPb2VgiwvrDMs1rtybcReK",
 				name: "Elemenix #233",
 				file: "Elemenix_233.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2506,6 +2808,7 @@
 				json: "QmZgsVn1azm3EonmuARRVW3vau4ibwkSrhb5oLC8msyV3t",
 				name: "Elemenix #234",
 				file: "Elemenix_234.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2514,6 +2817,7 @@
 				json: "QmRVRsZc4Wv9MzhNgJHnCrwjHsmRrhbAw66drz7PiPmMMX",
 				name: "Elemenix #235",
 				file: "Elemenix_235.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2522,6 +2826,7 @@
 				json: "QmXCphPoFQvxT5TS6VYASiyJpgFFRoaxwHCNWhusdBgbkT",
 				name: "Elemenix #236",
 				file: "Elemenix_236.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2530,6 +2835,7 @@
 				json: "QmSgvM2fbb7tqTY8UJBLb684zgaPuNEXgU3Ma5WjcSmrfe",
 				name: "Elemenix #237",
 				file: "Elemenix_237.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2538,6 +2844,7 @@
 				json: "QmUHJbn26VwYdcwoqCcmm6SYTmP7ZSHD2eiuChFMrZzdzx",
 				name: "Elemenix #238",
 				file: "Elemenix_238.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2546,6 +2853,7 @@
 				json: "QmTWSYUP3QX3Hx3LMTRemNLyKPBBKKvXCH3nJwXHfHMbc5",
 				name: "Elemenix #239",
 				file: "Elemenix_239.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2554,6 +2862,7 @@
 				json: "QmdEH76rEDjxL9F984WUyvdWgHLFvgcavmvxxyBzHdkkUX",
 				name: "Elemenix #240",
 				file: "Elemenix_240.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2562,6 +2871,7 @@
 				json: "QmTDkq7d7cNPsGK57VmBLHXQuaj3ahvE28W8K6ttrv8ozS",
 				name: "Elemenix #241",
 				file: "Elemenix_241.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2570,6 +2880,7 @@
 				json: "QmYja6TEhQrhL8d1ibP9jJZPVy2mRxMQY7k5pLHuLKoyw3",
 				name: "Elemenix #242",
 				file: "Elemenix_242.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2578,6 +2889,7 @@
 				json: "QmXUD2wAcr6yeGanF6rXNbExSJCSFkrn75FW1iKrGjtca2",
 				name: "Elemenix #243",
 				file: "Elemenix_243.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2586,6 +2898,7 @@
 				json: "QmfCR5v7BmKuz72M5wuG6GihLCVM4EJBbQqqyLG8BG5NFU",
 				name: "Elemenix #244",
 				file: "Elemenix_244.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2594,6 +2907,7 @@
 				json: "QmZRqwRtQHMz1qCa9qfMH7eMsbE4VhcAYj9DBw4eWn5Ro3",
 				name: "Elemenix #245",
 				file: "Elemenix_245.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2602,6 +2916,7 @@
 				json: "QmUYsLdKMLQF14jzR9Qgo6MLTt2JBHTMDpGMVW8CZAtCgg",
 				name: "Elemenix #246",
 				file: "Elemenix_246.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2610,6 +2925,7 @@
 				json: "QmdWXRPech54XfYMQWbRDGtnRQTpszLpGq9cXw5VSUp4uJ",
 				name: "Elemenix #247",
 				file: "Elemenix_247.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2618,6 +2934,7 @@
 				json: "QmZYgfWLV7Mk5sABHY4Vdqhc1ze2cN5wGEDNZn9akCvD3C",
 				name: "Elemenix #248",
 				file: "Elemenix_248.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2626,6 +2943,7 @@
 				json: "QmRQSBLbSqJUBLRZKFMcaN1DmDc9qVptDEWQTqS4ATZPhc",
 				name: "Elemenix #249",
 				file: "Elemenix_249.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2634,6 +2952,7 @@
 				json: "QmPkWs3YurKa3E8CLjNrhDtA1kMireruvWgNR62Xaf6Abu",
 				name: "Elemenix #250",
 				file: "Elemenix_250.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2642,6 +2961,7 @@
 				json: "QmWKFcGx2iRmQVvoDKx1x3U6cNTCdQncyHficT4DRqAPvy",
 				name: "Elemenix #251",
 				file: "Elemenix_251.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2650,6 +2970,7 @@
 				json: "QmPN4eYP3vmZMpy27Mw3WYQ7fyRyiipsEwVthyLYhKqbX2",
 				name: "Elemenix #252",
 				file: "Elemenix_252.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2658,6 +2979,7 @@
 				json: "QmeGAdXWbiGzkePLuohkDkoy8df8B3SkohAZDYXAWM44Do",
 				name: "Elemenix #253",
 				file: "Elemenix_253.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2666,6 +2988,7 @@
 				json: "QmNviB7nCfwkrEFzJnpnhwwZax1MCuMJbYy3bfrQ2iArRc",
 				name: "Elemenix #254",
 				file: "Elemenix_254.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2674,6 +2997,7 @@
 				json: "QmWHJYuFsiHBR42AogPNF7vDvPdyQU987S286V9revnQxr",
 				name: "Elemenix #255",
 				file: "Elemenix_255.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2682,6 +3006,7 @@
 				json: "QmdSYZfenNjKXS39nDDbyN1ZTRRxSYkNCUvVsPJ5jPJxZB",
 				name: "Elemenix #256",
 				file: "Elemenix_256.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2690,6 +3015,7 @@
 				json: "QmeqnMstoQUpNMLBeRKm1BrupdhxbsPkBfqP9DLpnykh5Q",
 				name: "Elemenix #257",
 				file: "Elemenix_257.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2698,6 +3024,7 @@
 				json: "QmP3SfxnXaZiBVpe9PYQJjv8JrMKNoSytKfQg1uonzPurG",
 				name: "Elemenix #258",
 				file: "Elemenix_258.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2706,6 +3033,7 @@
 				json: "QmV97uPqwVEZNnQu2RcaKZ8PQB3t1RJprMW3RF7jsK5qJ7",
 				name: "Elemenix #259",
 				file: "Elemenix_259.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2714,6 +3042,7 @@
 				json: "QmY3BPrSWfVorQ16h4cdXDydv1LycseMa8d9R8Sz3XbMY5",
 				name: "Elemenix #260",
 				file: "Elemenix_260.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2722,6 +3051,7 @@
 				json: "QmQTSgkK7KHdfaNpfXGvXSShwimaN315HYzRCyNBDCujWk",
 				name: "Elemenix #261",
 				file: "Elemenix_261.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2730,6 +3060,7 @@
 				json: "QmcqhjUms1XWUeZDSnuDNsnUzFE2GtrwEaWFEVkiyFFiVY",
 				name: "Elemenix #262",
 				file: "Elemenix_262.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2738,6 +3069,7 @@
 				json: "QmUTmBjbzsskGjZD243WodaUDA17cSXUMGsgd5k1VHfkg9",
 				name: "Elemenix #263",
 				file: "Elemenix_263.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2746,6 +3078,7 @@
 				json: "QmTk8ycVc8tVWBcshH8pj9v733p4X8YBzgSwPYEjRByXEk",
 				name: "Elemenix #264",
 				file: "Elemenix_264.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2754,6 +3087,7 @@
 				json: "QmZd8gVQmp3aG9dTecNS6XAh2YTajvL1knHzK44gjbxjyH",
 				name: "Elemenix #265",
 				file: "Elemenix_265.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2762,6 +3096,7 @@
 				json: "QmTQSbpF6pxnL1mJb2uf3ECiLz1FaqQUYyESTsoLXMQ7Ls",
 				name: "Elemenix #266",
 				file: "Elemenix_266.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2770,6 +3105,7 @@
 				json: "QmQoAfuNXvDzbPfT5ohzGdXoTjLqL12qFSuXtPTem9oC3a",
 				name: "Elemenix #267",
 				file: "Elemenix_267.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2778,6 +3114,7 @@
 				json: "QmbX2yW52sLf41kbzrVFUt66ooR5GEyUmMC1qB8rA63WDD",
 				name: "Elemenix #268",
 				file: "Elemenix_268.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2786,6 +3123,7 @@
 				json: "QmNvD9VXawq9meJM262ZNdzZBdjbnXzqHTtjW4EUiknStR",
 				name: "Elemenix #269",
 				file: "Elemenix_269.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2794,6 +3132,7 @@
 				json: "QmUyWVXNj3PMBYYgFA6wb8KWWeGKNJsxx9m4faP8kAMUmJ",
 				name: "Elemenix #270",
 				file: "Elemenix_270.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2802,6 +3141,7 @@
 				json: "QmWPBGow5bx3uzEwNo2KST11D6KjzMya9iHDRAPDMi1BG4",
 				name: "Elemenix #271",
 				file: "Elemenix_271.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2810,6 +3150,7 @@
 				json: "QmXTjuyuum8LsEoVNrheunqLGu1YL3CdpYbtL6hAAD7k5R",
 				name: "Elemenix #272",
 				file: "Elemenix_272.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2818,6 +3159,7 @@
 				json: "QmbXqCNDYfNZvgjpSc499FZMStfX3AEfgwbfUXex6zTKrZ",
 				name: "Elemenix #273",
 				file: "Elemenix_273.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2826,6 +3168,7 @@
 				json: "QmNeTHqiTq8ds2SSmiifyUeUXqMtr9XXJquxHW4sApzv9f",
 				name: "Elemenix #274",
 				file: "Elemenix_274.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2834,6 +3177,7 @@
 				json: "QmfRWwJUUAKnFjvioETanZBRxjBEidJ9AfWtN3v6pBDHb5",
 				name: "Elemenix #275",
 				file: "Elemenix_275.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2842,6 +3186,7 @@
 				json: "QmacugvEKDTVMkGPWBPLGTqtyDLfYGuMSRpZL1qV7B6Ttc",
 				name: "Elemenix #276",
 				file: "Elemenix_276.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2850,6 +3195,7 @@
 				json: "QmTBufUyQhvhje4YsbyXJBYaASmew6mZF1berawABvhxx4",
 				name: "Elemenix #277",
 				file: "Elemenix_277.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2858,6 +3204,7 @@
 				json: "QmcTXtyWh9dXugxYwYE289Lvua6bYjuCEFBip3n7pqSTVv",
 				name: "Elemenix #278",
 				file: "Elemenix_278.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2866,6 +3213,7 @@
 				json: "QmWTUv2zcaigj71UfQgoFXcYGueuQGQu6Q9oYghCL2kZDk",
 				name: "Elemenix #279",
 				file: "Elemenix_279.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2874,6 +3222,7 @@
 				json: "QmddvZrnv621Hdj3f55nDZ6hwjSyPvNFV95iAxSGABywzZ",
 				name: "Elemenix #280",
 				file: "Elemenix_280.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2882,6 +3231,7 @@
 				json: "QmUXuXPFfddgxPZucvbRXMPQ27chM1WviDGDhpgvh3qX7w",
 				name: "Elemenix #281",
 				file: "Elemenix_281.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2890,6 +3240,7 @@
 				json: "QmdR1eBsD2EEXQtKg676rDG4K7G5kC2D46Bq9z84soWXnx",
 				name: "Elemenix #282",
 				file: "Elemenix_282.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2898,6 +3249,7 @@
 				json: "QmaNss6ZnT4rUxNcpLG21HSujadvaWMp3ctR8dBmV33aez",
 				name: "Elemenix #283",
 				file: "Elemenix_283.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2906,6 +3258,7 @@
 				json: "QmStfPwMfeTywBphvEJkb7axa6RNfcLWz3picDzxbkyCNL",
 				name: "Elemenix #284",
 				file: "Elemenix_284.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2914,6 +3267,7 @@
 				json: "QmSBR25VzjRHGBWQeCaK4nXmHUfGgHHeCZY11dzJz5ea8Y",
 				name: "Elemenix #285",
 				file: "Elemenix_285.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2922,6 +3276,7 @@
 				json: "Qmf7iL6ofrhpaAayEsj5USgjJFRTqJrLVy57tTKeCn98mK",
 				name: "Elemenix #286",
 				file: "Elemenix_286.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2930,6 +3285,7 @@
 				json: "QmXdzzkCHejV8Q5rxLyhUdZTBWqpkjnTg8RnBeyb7fCDjG",
 				name: "Elemenix #287",
 				file: "Elemenix_287.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2938,6 +3294,7 @@
 				json: "QmNxmkuBdu9L55Uso6tgrcJvxxam11LL4uC9fPuqUm55gq",
 				name: "Elemenix #288",
 				file: "Elemenix_288.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2946,6 +3303,7 @@
 				json: "QmcU1VxukwHT8TgNCrRnYu8tRa82fg4RDtbQD8GtNpJb7y",
 				name: "Elemenix #289",
 				file: "Elemenix_289.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2954,6 +3312,7 @@
 				json: "QmdFBbTDRwtJHdiCECEVQuZxRXA76ih4UYqZM9eUiGUTwE",
 				name: "Elemenix #290",
 				file: "Elemenix_290.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2962,6 +3321,7 @@
 				json: "QmX61ee5LdmtFrsbBpkViYaBUYsNwD9aTNYe9HXArVPFa7",
 				name: "Elemenix #291",
 				file: "Elemenix_291.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2970,6 +3330,7 @@
 				json: "QmZdEHQ8ET7tGNmktsJ4cepfFnosmBEp7WagBtKrmewhmc",
 				name: "Elemenix #292",
 				file: "Elemenix_292.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2978,6 +3339,7 @@
 				json: "QmTCM47qEpNbfFCYLeKMxwiERZh63UBdPozXjqG2Wn8ybX",
 				name: "Elemenix #293",
 				file: "Elemenix_293.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2986,6 +3348,7 @@
 				json: "QmPKKWXXZ1HKe4oVNENk5wnMQjWakM372NXhmqPJd14qfn",
 				name: "Elemenix #294",
 				file: "Elemenix_294.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -2994,6 +3357,7 @@
 				json: "QmbniMK4YXoWAkuHxHTZ2yLksbekpjSyPTBxrK17X4hgBP",
 				name: "Elemenix #295",
 				file: "Elemenix_295.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3002,6 +3366,7 @@
 				json: "QmTQUy5Sw6ecMx16ovaPhTaLeH7FSsaA5ELiPVE2v9MUYn",
 				name: "Elemenix #296",
 				file: "Elemenix_296.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3010,6 +3375,7 @@
 				json: "QmRFqZYHsZvAzrNJoDg3nY3nEcXaa4VkjD4bntQTAhLJrd",
 				name: "Elemenix #297",
 				file: "Elemenix_297.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3018,6 +3384,7 @@
 				json: "QmQp1sHaP9pA3Hj35Rf1HRHfBgMwdTdVaKJeqtypJaLP6m",
 				name: "Elemenix #298",
 				file: "Elemenix_298.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3026,6 +3393,7 @@
 				json: "QmXDRfQobU4YjsVyybi9hGxU9gmLAPsKSLLW72T9kxbdQG",
 				name: "Elemenix #299",
 				file: "Elemenix_299.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3034,6 +3402,7 @@
 				json: "QmQbfMwivbK3yRgGaHXibbWp3EWpajrLT5PdGvMnn1tGRZ",
 				name: "Elemenix #300",
 				file: "Elemenix_300.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3042,6 +3411,7 @@
 				json: "QmZxXQhVrAQDnhka6bdmHrXatjbWM43naafHcr7AnktzpV",
 				name: "Elemenix #301",
 				file: "Elemenix_301.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3050,6 +3420,7 @@
 				json: "QmTXfRNDUxQAEixwpwjksd2QiseAqMJT5Xt9mK2M6GmANd",
 				name: "Elemenix #302",
 				file: "Elemenix_302.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3058,6 +3429,7 @@
 				json: "Qmam6xqDqPTKX52inDpnLmSuEgM3nUcawqRmYYS7hUKpCM",
 				name: "Elemenix #303",
 				file: "Elemenix_303.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3066,6 +3438,7 @@
 				json: "QmemiUgjMc2ga1iw9CM6awYfMisN7AcAtAEHkvta4KWKPm",
 				name: "Elemenix #304",
 				file: "Elemenix_304.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3074,6 +3447,7 @@
 				json: "QmRYmkw9GPtvjd79GPrSjRU5tst2PnKhpZrjGgo7c5YVJB",
 				name: "Elemenix #305",
 				file: "Elemenix_305.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3082,6 +3456,7 @@
 				json: "QmZZuMcRm6csSM8oSNMNJ2iNYKbohio5jPmiWRJN5fKqnk",
 				name: "Elemenix #306",
 				file: "Elemenix_306.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3090,6 +3465,7 @@
 				json: "QmZsHwV4qP8F9Vhf4jtaE3GbMDMb74hBSP3zz4EDqDRJop",
 				name: "Elemenix #307",
 				file: "Elemenix_307.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3098,6 +3474,7 @@
 				json: "QmVxowXCQ9YCGkxJoY89zwGTEsH5Ca9eXNSVmgi5KDrrwK",
 				name: "Elemenix #308",
 				file: "Elemenix_308.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3106,6 +3483,7 @@
 				json: "QmbP8f3cP1oLcGaE4u8AZopJ6GvT2oxNRDDwNSwd3aUvb5",
 				name: "Elemenix #309",
 				file: "Elemenix_309.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3114,6 +3492,7 @@
 				json: "QmSVStvLz3HU8SxzBcScyvngypc5L2f9cFMGYdALnQDkk5",
 				name: "Elemenix #310",
 				file: "Elemenix_310.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3122,6 +3501,7 @@
 				json: "QmV3ae3qYfBsSoLpxgzWDqdXr3kFfmuRQH2af8E14LySYA",
 				name: "Elemenix #311",
 				file: "Elemenix_311.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3130,6 +3510,7 @@
 				json: "QmPZaEt2GRvLoKave1mLsUSc22d62XzKzKnmSZg6hfnETg",
 				name: "Elemenix #312",
 				file: "Elemenix_312.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3138,6 +3519,7 @@
 				json: "QmVBbtnyJgqjzyNSqSkscn9RdxTFjqxF8oVCKnUFM4uX2Q",
 				name: "Elemenix #313",
 				file: "Elemenix_313.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3146,6 +3528,7 @@
 				json: "QmaFNsJQfxooEXrHT8StDPeu6VG4cvxLv4BqjGtYJPRtyS",
 				name: "Elemenix #314",
 				file: "Elemenix_314.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3154,6 +3537,7 @@
 				json: "QmYDGi2gAmxt638SVV1rUkeE1HrFo7aSLQbqpyDrbhXjWF",
 				name: "Elemenix #315",
 				file: "Elemenix_315.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3162,6 +3546,7 @@
 				json: "QmSLPwvVFeh8KANdwQ42knBd9PKV2qmdZ1YwvDjdusNNqr",
 				name: "Elemenix #316",
 				file: "Elemenix_316.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3170,6 +3555,7 @@
 				json: "QmbBxAUYMo5Da4SQy3hgWPN7QjAuCeVT49JG3BGEkuXAZo",
 				name: "Elemenix #317",
 				file: "Elemenix_317.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3178,6 +3564,7 @@
 				json: "QmPhQSoQz9bAq1M4Z7V6DE39BN5rUMpyLw7aD684TtHCRi",
 				name: "Elemenix #318",
 				file: "Elemenix_318.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3186,6 +3573,7 @@
 				json: "QmZkk1oeu4278bXNSTNd6fyYd16bLUBV9LLvWX6AvueJbz",
 				name: "Elemenix #319",
 				file: "Elemenix_319.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3194,6 +3582,7 @@
 				json: "QmZgAtx8aGtH1a9LZacvAELSGnGP97JTfdpf2ojL1VTnUp",
 				name: "Elemenix #320",
 				file: "Elemenix_320.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3202,6 +3591,7 @@
 				json: "QmR8okssZKAxkaNVgu162yEatEwpRJ95JQkPTwDwYor21N",
 				name: "Elemenix #321",
 				file: "Elemenix_321.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3210,6 +3600,7 @@
 				json: "QmT2ivx4VyuWr4k2EP8k3TQUQ7TjtivZm2zjzmUdJGkzsG",
 				name: "Elemenix #322",
 				file: "Elemenix_322.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3218,6 +3609,7 @@
 				json: "QmPdLKvxo3rW7YYUtNdkh8JJrC1pADFBdZz677mtX144V4",
 				name: "Elemenix #323",
 				file: "Elemenix_323.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3226,6 +3618,7 @@
 				json: "QmVUTe3NQBzNNAKmxLPMcS641VkHU8NkiJAsxgHWTBM677",
 				name: "Elemenix #324",
 				file: "Elemenix_324.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3234,6 +3627,7 @@
 				json: "QmUgZP2vuQxtEQUi3v9Dnb2NK8u839CN21azoMz8yKDfoa",
 				name: "Elemenix #325",
 				file: "Elemenix_325.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3242,6 +3636,7 @@
 				json: "QmRqpgnFzKX9JM9eD7PY5cbuza3JmNSPzgW2cGdPVE6ZoE",
 				name: "Elemenix #326",
 				file: "Elemenix_326.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3250,6 +3645,7 @@
 				json: "QmeMSuHSGH7KkuTk8FEN4B8y5JqkZ2D1DW9zWfqocJmcpf",
 				name: "Elemenix #327",
 				file: "Elemenix_327.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3258,6 +3654,7 @@
 				json: "QmdvxNrawo3Kv7dUUxmwBg4CfXyykQLAgLZ3umMnQMS6KS",
 				name: "Elemenix #328",
 				file: "Elemenix_328.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3266,6 +3663,7 @@
 				json: "QmdbsgqKA4sLHVhKUUz2h6TPSmcYBMj9hF2PQY8oruUA3D",
 				name: "Elemenix #329",
 				file: "Elemenix_329.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3274,6 +3672,7 @@
 				json: "QmbbQmsiw28xNLPpp9LQoET19gsRwZkvxiXioStAipoRYN",
 				name: "Elemenix #330",
 				file: "Elemenix_330.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3282,6 +3681,7 @@
 				json: "QmcMSNL438aYRaQ31hfGnLcVzpCreDqr1yXfU4f8amrGqv",
 				name: "Elemenix #331",
 				file: "Elemenix_331.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3290,6 +3690,7 @@
 				json: "Qma9hBuiNPYS5BYVtLhCvJ1N9doHK4De2XcFZzJNXg1jRg",
 				name: "Elemenix #332",
 				file: "Elemenix_332.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3298,6 +3699,7 @@
 				json: "QmebfbnwLtNWNpNUqEYgYL3dzGXSW6QZx4iZSLXbM6Ehcd",
 				name: "Elemenix #333",
 				file: "Elemenix_333.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3306,6 +3708,7 @@
 				json: "QmRQ33KK6UVRpYr8ifgZDJkwpCbV4WdNTvn6geA1VjW1Tx",
 				name: "Elemenix #334",
 				file: "Elemenix_334.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3314,6 +3717,7 @@
 				json: "QmZXa2iRTSd4Z1uMHxgBLQeveZtUTym9nezpZGNyHs8wpp",
 				name: "Elemenix #335",
 				file: "Elemenix_335.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3322,6 +3726,7 @@
 				json: "QmagekVJUztaaKamRdty1ekPJDRr8L6GUYTn9JCjMv77xL",
 				name: "Elemenix #336",
 				file: "Elemenix_336.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3330,6 +3735,7 @@
 				json: "QmP9mvLmkBXqQ6TUN89fBSfspm2pXZnk39MgnfvcQsVKhk",
 				name: "Elemenix #337",
 				file: "Elemenix_337.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3338,6 +3744,7 @@
 				json: "QmR8PJquCUhehjLQvEERkjqsVmkSnLanwEGWYtAJpCz3W6",
 				name: "Elemenix #338",
 				file: "Elemenix_338.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3346,6 +3753,7 @@
 				json: "QmQiVkqMNJPemWtPKN2H1R4xCYqH6CtqbcN9tkTb3v315U",
 				name: "Elemenix #339",
 				file: "Elemenix_339.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3354,6 +3762,7 @@
 				json: "QmQRMQhnXjKHB5eethgd8fchtYjVnriCcZL2vLGgkqs4qY",
 				name: "Elemenix #340",
 				file: "Elemenix_340.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3362,6 +3771,7 @@
 				json: "QmbzuGWkEW1rhw6MHYtSsBiLomw8WyP64tX1yJ6anSE1AN",
 				name: "Elemenix #341",
 				file: "Elemenix_341.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3370,6 +3780,7 @@
 				json: "QmcF9Pvg8yed7B4LbmptuuC4U8mmwgWLYM99m9RV9tVsua",
 				name: "Elemenix #342",
 				file: "Elemenix_342.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3378,6 +3789,7 @@
 				json: "Qmdk65DnV1SSfFEnxUrk4i7oLEH6Ay9L9h5rQgwJ3DfXQ4",
 				name: "Elemenix #343",
 				file: "Elemenix_343.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3386,6 +3798,7 @@
 				json: "QmUjQoQTMwxzc8NYyMFiX56evEfqFSiyJD78kDWi96DfmT",
 				name: "Elemenix #344",
 				file: "Elemenix_344.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3394,6 +3807,7 @@
 				json: "QmdYYYJJ2faRS8CzWTLop9BrNoiSZ1chcJMkiB4LE2Dkij",
 				name: "Elemenix #345",
 				file: "Elemenix_345.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3402,6 +3816,7 @@
 				json: "QmRKUbGZ8YzshUHA6b9aFjHTgVGeG8A22dxbMhSDKhjRWv",
 				name: "Elemenix #346",
 				file: "Elemenix_346.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3410,6 +3825,7 @@
 				json: "QmQqWo8G14h6Tb3tpNTpuou7UwCSi9NG8jWneWmDySC573",
 				name: "Elemenix #347",
 				file: "Elemenix_347.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3418,6 +3834,7 @@
 				json: "QmdtzR723zuo1VSsZwRArtBzqymQDurJFsPL6nkMGqHPnQ",
 				name: "Elemenix #348",
 				file: "Elemenix_348.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3426,6 +3843,7 @@
 				json: "QmaJKD8sezEinZgBZJBzEBydNHZ99f2G8ioF4BSQQHcJYH",
 				name: "Elemenix #349",
 				file: "Elemenix_349.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3434,6 +3852,7 @@
 				json: "Qmaw5gWSz6BLbu7TGDZg2DVscv75yDYVm7hhVyfxDWkLvx",
 				name: "Elemenix #350",
 				file: "Elemenix_350.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3442,6 +3861,7 @@
 				json: "QmdK1NcPSPScRsg9MD6wgjeXMe8a85s79SQ73KbdirWo2D",
 				name: "Elemenix #351",
 				file: "Elemenix_351.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3450,6 +3870,7 @@
 				json: "QmedBWQneWpMegkp5hiRqJdv1T2nXifhQGo7LUhBRPvx9H",
 				name: "Elemenix #352",
 				file: "Elemenix_352.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3458,6 +3879,7 @@
 				json: "QmZSeTGfgWHZJTMLfsqHrMdLHDYUsUbbmuumcmwkZoEBuC",
 				name: "Elemenix #353",
 				file: "Elemenix_353.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3466,6 +3888,7 @@
 				json: "QmR7X7p9gsLARBhcfgviq3B5a5HAwAJAgAEX1uvvceoAF7",
 				name: "Elemenix #354",
 				file: "Elemenix_354.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3474,6 +3897,7 @@
 				json: "QmTsLuSqSgXajmpU6FPaZwzp9bcowRgCTfq5DF9fSpMv5A",
 				name: "Elemenix #355",
 				file: "Elemenix_355.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3482,6 +3906,7 @@
 				json: "QmNbF6ovszDD1BTeWvZw8dhUhZFcxr3q2ogWQNuemvKdwL",
 				name: "Elemenix #356",
 				file: "Elemenix_356.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3490,6 +3915,7 @@
 				json: "QmR4JjxTTDPiiA4HB149waUD6vkSgLgrhVWw1c2ZpbCuoW",
 				name: "Elemenix #357",
 				file: "Elemenix_357.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3498,6 +3924,7 @@
 				json: "QmXbro2UXXcYkF2b2SkKRsdcAj9uqtVqUFzmydWN58ekku",
 				name: "Elemenix #358",
 				file: "Elemenix_358.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3506,6 +3933,7 @@
 				json: "QmcF1VCVAVwx62Tmp83Zkwq4tb2VVgrpPDEuNNdzZGKVUD",
 				name: "Elemenix #359",
 				file: "Elemenix_359.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3514,6 +3942,7 @@
 				json: "QmajkuGeTREoBqNSpQWx9fTD2axnA74syRmFByqFChy17n",
 				name: "Elemenix #360",
 				file: "Elemenix_360.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3522,6 +3951,7 @@
 				json: "QmPs54xfvf2GmAko75Qxk3h32LtNPeaN13xB4BB2TCVPuA",
 				name: "Elemenix #361",
 				file: "Elemenix_361.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3530,6 +3960,7 @@
 				json: "QmZ81ygLjbNASZ8QfCXyXHYEUcTErrV6dQa8ENhzbMTMds",
 				name: "Elemenix #362",
 				file: "Elemenix_362.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3538,6 +3969,7 @@
 				json: "QmX9hd27GU8i8PZbkkThhyMq2uxUFdTTzBYegCFCySMviD",
 				name: "Elemenix #363",
 				file: "Elemenix_363.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3546,6 +3978,7 @@
 				json: "QmQ1cka568pihgZN751Szg6NwKz9Dy9CNyxQjhVf1SLbLR",
 				name: "Elemenix #364",
 				file: "Elemenix_364.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3554,6 +3987,7 @@
 				json: "QmdFyPFSkgPoZEW2Quq7GTGpwYZDgV3zhajp5MK5Kaivzx",
 				name: "Elemenix #365",
 				file: "Elemenix_365.png",
+				collection: coll_default,
 				royaltyPercentage: 7,
 				minted: 1
 			}, {
@@ -3562,31 +3996,733 @@
 				json: "QmdiqA5w33XLTRxHkFaf256KtMwJ3BAUBH5HcMnipCeQxE",
 				name: "Elemenix #366",
 				file: "Elemenix_366.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x880e17a58fb661af577c7c104c5e651731cd6d10b6a4fbb8a2ccbcc66f70699f",
+				dir: "QmQo75qrprfKt6PzsWiCLtJLuW9k4nvepcBwx45mXGPTTv",
+				json: "QmXVkcuFSyfrq8EwqFdk88W3RYQVATDYGxCpXtSbHwrjWW",
+				name: "Elemenix #367",
+				file: "Elemenix_367.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x38f353f8fc83c3b939e30766433d0a886fa18e028f61a1b50ac39118c40aed6b",
+				dir: "QmUm5RPPc2nhLud5vpCnZFKp8Co7L3fYGHN25wh64Yfcs1",
+				json: "QmSAxjwTwt198S1jp4ii4TtH42Fh5anNEB7m1oPLqt8WQS",
+				name: "Elemenix #368",
+				file: "Elemenix_368.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xa075bad89ad2fa88cf7a4ef2dfc263ad862a4c56aab43e8530673cddd58e69a4",
+				dir: "QmZAb95qdZkRXugwKVDgmSiBXKmoCHQVjLJ8WYrMpkMwf1",
+				json: "QmZ924Z4Wykc3T5ec8mzHn6Hnr6bWqmpy8BCYGPk2HAqvT",
+				name: "Elemenix #369",
+				file: "Elemenix_369.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x016df0a637e708d25147f53943518defed185a9a2a2d437f2d52e7a9b4bada71",
+				dir: "QmZdcARB7FyA5y4vjQJtB3WKEaacTKzrDB5ajMUyn9Ev5u",
+				json: "QmNSEMBV78QpiKeVbBaLB72ewnsw4cSiSYDNseTkUumXZz",
+				name: "Elemenix #370",
+				file: "Elemenix_370.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x5463757e0514d63a8d2266745027c411cbefbefe8e410d854fc81eddbfe8900a",
+				dir: "QmaNDsviyRqzJX5D6Kt3QKDMzvFPtmbwXU3Mgysm2SUwoY",
+				json: "QmU24vCvKaqRb4aCmCN7ZjP1LPsu5wmZkShZqFZSVfcJPK",
+				name: "Elemenix #371",
+				file: "Elemenix_371.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x438c34ceca3f33f0b79ae3575793a228453211d1c5987662245bec875cffa0af",
+				dir: "QmZB4HBf1fVZDJ3eVmAuEe45R7Fm5aB1wXJFXp2CnaUWm9",
+				json: "QmStL2NSorUsQPGWq9eAnLMBVE6YZbNWCug55cJKTZdJia",
+				name: "Elemenix #372",
+				file: "Elemenix_372.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x7f2025c062f8ccd70c769a0f535c83d7daa9974e868f2e15f76fa1d70a00ebd0",
+				dir: "QmUCyP16HA3t85aq6HXPUcVBwFoZ46xuZCY8Q5ezxh6Zyy",
+				json: "QmWttvED58PELzA9beTHygCSRriAkHvVHFu5hxcNm88Ksm",
+				name: "Elemenix #373",
+				file: "Elemenix_373.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x1b580161c1bc41de07e02b3fa2f66b93634e99d2962fd6e262d2c00b9b8ebd57",
+				dir: "QmZ9coDkgvm2nZttt5GdJY8nBviFALEnoXKetkZzmmTcKi",
+				json: "QmQBPYqmio6n5chQs3sCie3Uxmc1LAhioypecseVemG2ir",
+				name: "Elemenix #374",
+				file: "Elemenix_374.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x606b1b6752f808e9640da9c0d81be092b79ed1a57222dcef4810087e2491462c",
+				dir: "QmNZabm8P86sdSSXCDzVL25cJKWWGuB2KU7jTzAT9RD8Vu",
+				json: "QmUq2aGzfigWgAuLfazD54oJEVNkjLg952ifogV9G92DVV",
+				name: "Elemenix #375",
+				file: "Elemenix_375.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xa47801496869b184d08b69613de067f30594b3b1119e68b2f1bcbab5ca5100f4",
+				dir: "QmWYb1SBMguL3PUHdfzRe1Ukef4sXKfVehM9UnJRjP4izT",
+				json: "QmZQfhqxMf5YPPiqDbMvoED7xcDgrABGtV5gWh6RB6BJ9Z",
+				name: "Elemenix #376",
+				file: "Elemenix_376.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x39c9514b58db410ecf88071c6dc5006069d3e11f3927a1e6ae2071e4f2592192",
+				dir: "QmQ1jKiFxvEzxX63rtbwbGrXozSyR4zjGFjXqoEF4Yo1m8",
+				json: "QmSEDze1c7yQ5RL1RTKrwwPekaZ4p7codUwRpffnzpp49o",
+				name: "Elemenix #377",
+				file: "Elemenix_377.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x7e9087a7d60f0997b010336c2b73489a5a3acffee09fa6ffa2d9c49b0d6defd0",
+				dir: "QmU3L3FPFroLH9p71DitRPqLmncemyufv4TiFKUiq9eGVo",
+				json: "QmWrhuJ3mkBbtTt45xYRrs7dxAhFzhxuZRK8c4t4mS1rWB",
+				name: "Elemenix #378",
+				file: "Elemenix_378.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x48804b62017df8349107dd4ad37eac5d4e9fe2949b6f49c31737593539e4b956",
+				dir: "Qmc8YXkbNWDVhpKTCQtj8h462k6CZna91hAkxuKj3hqKzj",
+				json: "QmTDfXacmFLrCSK3fKRv9ZSGHidDo3MBKtNq8A7nU89HFT",
+				name: "Elemenix #379",
+				file: "Elemenix_379.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x0e364b26ed459aee087f2d596db6171c0c95eb168cc64ffc569722ac7fe6dc71",
+				dir: "QmSi4Gz5FvHgsBMHYPby6ogX9Wqd7fTu6dhFivxcAJjSAC",
+				json: "QmPJ8SAx2FeHQJXyLx8bWdVjztASC3dUpvWdwVDmmMr6s2",
+				name: "Elemenix #380",
+				file: "Elemenix_380.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xe545d8763b04b6a3b10ed817a4dbfcd96ac08e9572480ad2b00ae6226057b282",
+				dir: "QmUeGwqoovAnMxByTxqP3RCuAmc2Ssr7p5ViuBGk6Fh583",
+				json: "QmdmdqumCKnqD3wbiv2MLp5xwJCTrQrTxL7N9N93MtADQ5",
+				name: "Elemenix #381",
+				file: "Elemenix_381.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xb6969309cdb27f6bc16aa10e5cab54ca8f0c9bba0a6192171a27776defe35f67",
+				dir: "QmRdiPQV3pNZ6DL8qdEPkFnnyGuZrNoYxP9HrV1bfW98g1",
+				json: "QmadQ5YuDBV6TRZKREnQ2ZPz7w1hRGTLHKg9Wb8xGnxyGS",
+				name: "Elemenix #382",
+				file: "Elemenix_382.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x7f984b55f67e89eb577b66c80142ec2e8d0c828b4fa43cd5fca3242d8c0c756d",
+				dir: "QmcH42ouAey7NFLRgPWJuAtoPF8jAJW3FZEWjZsreUmK24",
+				json: "QmWvjBDdy4YBx5jFPGMnKYBxwxNeBPvYhS1YCeMyvdNDEc",
+				name: "Elemenix #383",
+				file: "Elemenix_383.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xb794c4061c80eabc7395172b9464e34418570743b9b9afcf557ca2437ba0ca83",
+				dir: "QmTQRS6FcojXsBrCbvfcS9YZrMuKVMhyLuBd4TRSmMmVHB",
+				json: "QmahGtRQpSbwaqQ8zWM8qqNe9a4RxbFuRWvo8uJWnNB3ir",
+				name: "Elemenix #384",
+				file: "Elemenix_384.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xe97633323869ebd8752e526959482e15f31b5357b2ab90b591b86ab7d86691e9",
+				dir: "QmeLT7NvhN3Mv32QmkKiWHNqazb1XAsdcSVGGanrogedwH",
+				json: "Qme3zErt2bXoBHh5D859c3byvLtMibUNVgm2pwTgvyTWBa",
+				name: "Elemenix #385",
+				file: "Elemenix_385.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xd30fa4a778281e9d2efd3f9ed442a599b12234ca6d7ad474a5d51a08d2c3c660",
+				dir: "QmYh1NjA61mtnTke2euJmyJoETjRAmj3TRUxdYXzWnS2q5",
+				json: "QmcYYZwGfgr9Px2KqaDNtdMsNZik37F5Sdnx5Rg2DdMNkF",
+				name: "Elemenix #386",
+				file: "Elemenix_386.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xc8c429c332b248926cc76ae24e9664235f581d068048d0fdc59c906e4f40e3f1",
+				dir: "QmXQVnq6MfX4Y95uWCkScF1vYR7cKH5aDL4Bmo3EGbq7Gv",
+				json: "QmbrMjgiXtDh9Vas3otPkuYRo5u748mqenP6AuthkNQuZS",
+				name: "Elemenix #387",
+				file: "Elemenix_387.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x1559e8319442fa3e4b6320a9a13d7a33443e06e1bcfe83971b74b046639a9226",
+				dir: "QmYHqF71cQc3bPjvmcyHdWtARHx7eievSKUMFaKkarT9LE",
+				json: "QmPmznWME9Aa9nHYTjKPJzCo21Ha8TLibVvD2zB13BcAVs",
+				name: "Elemenix #388",
+				file: "Elemenix_388.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x6f3fea97893e2684c0cd4ca2a380e3257073c2c3ddfa1e17eb9eefa421332f21",
+				dir: "QmYNefH8zBboVBCLxTMTurbtnHbmxxJueR1J2Tf9TCo3Wu",
+				json: "QmVpvVVC1L8erGJRRsAsCpPM6xzkoXPtoDw962XZKAiEEc",
+				name: "Elemenix #389",
+				file: "Elemenix_389.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x8e8cc0ec0849b4b7bad83ff1c27a2803c07100c66be35d99be61e3e79be1103b",
+				dir: "QmXouFQ3nPd7x6BdKTfo1cw6FD2QRRcYUGNeGQopeaLYHy",
+				json: "QmXw75vwuLNGc5LXx7MxS3JXcA6NfRbzmD3Xu8dtHAsKer",
+				name: "Elemenix #390",
+				file: "Elemenix_390.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x2e6dbd57b9eb0107520b5d06f90af65a51cf061a69a48f187f6521773255ab35",
+				dir: "QmRX2LMduKP6VZcVQjVYjh2dSHfw1mfCZ4vS8VK9Mj8Enw",
+				json: "QmRTtWzWHhyJ2UGiyJ3rfHczhqo9M9iiPpLwhr5hFLqVba",
+				name: "Elemenix #391",
+				file: "Elemenix_391.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x5945708bd8b95dc1a6ba94f7a8b4f6a3ba2e877c57b1793cb7549812417f7486",
+				dir: "Qmc2BHPa39g65Q7cLcbCcDcK7QRGLwR59B3Qf3ondtzcCr",
+				json: "QmUM8Qakpkm57ASyNPzHAsTUamwsYvMCToAzVTTEitgWnR",
+				name: "Elemenix #392",
+				file: "Elemenix_392.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xd66a848df63eb786444507c221fffa24f92a1c425984dd7e412ebfc4e02b5ca0",
+				dir: "QmVZE16i3aMnNRLfrTAiyDhkSEgdCppnXTTGrfacYd2Xmv",
+				json: "QmcmeALKjt6U2ejPNVkUJzkiwT2qzTHHLAbYCur97Zp487",
+				name: "Elemenix #393",
+				file: "Elemenix_393.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x9fab45721fbdd54497575d3593db700829fa2ad2b81cd724994a3d2e27eeadf9",
+				dir: "QmZjxfqEryCDXGEcpqUCpz7PB2LhdKmhVkz9hmEMbB6caq",
+				json: "QmZ5w1LfoV6YjqNbPN6hvAqQr2wa5xF6h6kdrJJkmxhMfW",
+				name: "Elemenix #394",
+				file: "Elemenix_394.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xd57c012a2944423904229a0ec22867d14f1cc33cb212ecc4306fffdbddd419fb",
+				dir: "QmXkhsZYjmzeAUNpDf5Si6uFYjsW1TaVsdCSZmrX3EXndH",
+				json: "Qmci1DgMofEit1pnuVKThgNdcHM8DF4xS4HWBME5pP1DY6",
+				name: "Elemenix #395",
+				file: "Elemenix_395.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xf6185a530b04f6bf7469638085f915f06643c1ce6b45e8af6ed02170da430989",
+				dir: "QmRtC15BDs5u9QatDxvzDvvYUYrnHkNYFAieNpnbyZY89q",
+				json: "QmeuJYL25stX7WrYMxFnnT71edgmb6mWmGhC2HKxZhBwPe",
+				name: "Elemenix #396",
+				file: "Elemenix_396.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xcb330b5f83a74830dbcd40bdf4ebe4ff05ce7dd534d9548435e1b323d1f901c1",
+				dir: "QmX1462dZqQsKCvxBmivEhdzDDLBdTfTBPi4PmKr9iGG2N",
+				json: "Qmc1rcgvX5kswGh4bkh8XiVRTZb26drwjMpKVPSzE2iH1i",
+				name: "Elemenix #397",
+				file: "Elemenix_397.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x0748a915dede9d0b3d0471ca11906c88e030aa525e2eb36af78e87217eb131d0",
+				dir: "QmTSaggeLhDMrrSPRJypAnbX9WcJbCFxaeEfLFaFUhrARq",
+				json: "QmNq5pndwhHpAbK4weUWUDzmQddquJnXzCjtHWvRVx2y2X",
+				name: "Elemenix #398",
+				file: "Elemenix_398.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x76f4832a580e8708722db3ff56c44f7072aa1dff89fc0840ac87777d2804e55e",
+				dir: "QmPem6Ypzjho58Z7P1F8agbsCtutxyG8UoiftbCPVA1u79",
+				json: "QmWM14mmWjgUaF2ov48ssxKgjmz124RyhvGCmQHrytFdtZ",
+				name: "Elemenix #399",
+				file: "Elemenix_399.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x83c1d4a42fc765dcc7e030c9344dd6494792bfc08cca6ca7d306a8da56b1d1f1",
+				dir: "QmYTQUoVo1NkZBhkoMygbuRV9kxe3FhaMKHLQu2Q9xBEtn",
+				json: "QmXCyYS24s2EA49WyoywJbYSzZm1wqdaDAWdket5YdrdYL",
+				name: "Elemenix #400",
+				file: "Elemenix_400.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x850ff9dbb92e5781771a5018bd1956108f1e68d2ed7bf6b81de91a9d8153ce2c",
+				dir: "QmannePCivUSRxQ2ijZhTH3wmNkSakWo1CJ3bZrNNCngtb",
+				json: "QmXJ54arKXCXobfx2FHa3nhWK88BSRe2YTjAMn8wUTfc4b",
+				name: "Elemenix #401",
+				file: "Elemenix_401.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xbcabbd7d9eaaed5306ed42fd365f069bd9289b892559ee28a1a561c34ca8414e",
+				dir: "QmcT5FzTyWZ6soTwtTrwYvm8tzFC9j5LfWRHqRJeuxiXxo",
+				json: "Qmb39F99hHSzxVdZP6DV8AbKt7unwZ4jxT2qX9fEQUUn7P",
+				name: "Elemenix #402",
+				file: "Elemenix_402.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x59ed29c83dedc1d7a27e62da9a09d055abaaf89c97f030ee6998dd1b60ab81ff",
+				dir: "QmTchUQbdJMS5vGnhVQbgU5tGNBXt6P4V5mJ73Ci9y1oMU",
+				json: "QmUPgk3ezRjvAYbKkyN8FwrNubDAmWsPaH8GbcqLvGFani",
+				name: "Elemenix #403",
+				file: "Elemenix_403.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xd334d2d63fec7586eae11664770bf6475d1b09ec54d14bd655b0dfbf63f1095a",
+				dir: "QmZ95d2rAhYChJGwFhbrGGWVidTuAajHsfP2McDPhWqkGL",
+				json: "QmcZ7T87v2WJVmUprANLFENQhTRr4KZqK9CS1f9vNc8qqK",
+				name: "Elemenix #404",
+				file: "Elemenix_404.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x7d98479b188362181b5161370cac24fd832f8c6084cd51066511ac920f316b6c",
+				dir: "QmYiuiSxcgkWiLf6EcRGepJtbBoHTgovFSLjFQUFsfhEW5",
+				json: "QmWnvMBJKqMaW5QpiMtRphKGwzn9aykYw4bzfGURW9JjpP",
+				name: "Elemenix #405",
+				file: "Elemenix_405.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xd1dc60e8930880e2123e23e22a8112c649c87599fd006b7669cf89924d7d94ea",
+				dir: "QmYLSwq2DN7DqgcMSLWmkh16bi8bUxmnE3Z7i6Zv64saLA",
+				json: "QmcTrpePVtCYbq9pVnLoetzW5G7b5ioZQE6kLJiAtJ1Ac9",
+				name: "Elemenix #406",
+				file: "Elemenix_406.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x0e3f3876d71c36f372c3f555befdec13f27dbabe8590e5f696289182af2b066d",
+				dir: "QmVufRNSsD4BSdg3UhShjeLSRnTEe1SQBeBszADiLCWyBu",
+				json: "QmPJGL61mhd41fmp1ess8kZNUSxCTMnbHtV62c1fHG9bkx",
+				name: "Elemenix #407",
+				file: "Elemenix_407.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xd92db2018b14d0945091550587e29bc90a636cb8a2f448942ddf0d43f99b3cfe",
+				dir: "QmfTQxZ1GgGNFmHor43pRe3F1aocxZwnEYAsvWbKfqLjuS",
+				json: "QmcxRbMaA9A5QGqZfH3EtMrwa5pku9xZzujWwzsnvR3ckd",
+				name: "Elemenix #408",
+				file: "Elemenix_408.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x2b86fe52bfcde7e4c1d50152f0844e145cb918d79d02e92ea4080372ae59ef11",
+				dir: "QmabCEjftmAt7vjLT1ukW4rAjqqAZg1sMA5abQWR8o61Kx",
+				json: "QmRGZdTfcvixxG9bfF7r3APXbMZAKUitgkWk9tQTbR54rk",
+				name: "Elemenix #409",
+				file: "Elemenix_409.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x557220cc52e499306bc3277791f39f831bc4b7483008816e6f12e9bc19ce1419",
+				dir: "QmTDAu4pUqdQRc1Q44fCHReFBDUcqBcLbMYCp4wnFxbq4j",
+				json: "QmU6CJKDBw7UaBK5rfXK3gSq57vcFo5Mn5NyCcJVgmsLm6",
+				name: "Elemenix #410",
+				file: "Elemenix_410.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x5ef68717e08a3e25f20169fe1121e265be9fcd7320c2851b3c9b39c418bba518",
+				dir: "QmaYuKn53Fy9be2nkaeUr3tZeYKxJFoLQT5Z1UiUGen6jQ",
+				json: "QmUjM4don7vPX2oCmBaUXbbywGPZLxoWFs6xMBu7hhWUDD",
+				name: "Elemenix #411",
+				file: "Elemenix_411.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xb17e4014d96f87fc87eda060c121f69ca8d0456a9e37e46a6422c3fe137afb64",
+				dir: "Qmboon6VLJUTYD89vEa3NyovHhM8k5SwURGwDG5LRyrvET",
+				json: "QmaHWXc17FzpVKdHvugAnYVzJMGbsqpnjfdqCPXnNjTkro",
+				name: "Elemenix #412",
+				file: "Elemenix_412.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x4bce3c49caf8ede751129e8058a18d314de9b8a2a8f82404ff220f83f488f6c6",
+				dir: "QmW1iBjGA4UVJnHTQrcEniuMixvGGSLNLHsaEGcBSxfWNs",
+				json: "QmTSZgYVddDtJJPf59R6qnhNwa7a3fUscNM7r5CcdLZFDf",
+				name: "Elemenix #413",
+				file: "Elemenix_413.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x6823fa2f51d7e466a3666b855edcacf8f4b4d09a56d5d8dfd9263a2050f82969",
+				dir: "QmS3nJ3ZQsUYyh13cPLDkc72Axki8QYzK6qvGLdM1gRGVR",
+				json: "QmVMAvp4E8pvhmjLW5izkwTchCK47Ya7KA28WZpiRkafoE",
+				name: "Elemenix #414",
+				file: "Elemenix_414.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x11a387538dc429acfa518f451b4d79aa53382ef37d294cc647e5b171da972b3a",
+				dir: "QmQptjTAsGK3h3mkjbTaxQF77RKdqXUs9bSHQPX1jHsS83",
+				json: "QmPXWGNsZVBcS2BkZgAipBEzHsyqWaGTFczw1fY1twmg1X",
+				name: "Elemenix #415",
+				file: "Elemenix_415.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x6a33e8ce7d9e7b26c5ea4fabb6bdc3d6ccd321a5d21f36333a6232c20bfe893d",
+				dir: "QmUgS7C4bb3U9Ct56BjBGAzwW7p9Rt4UKSRwCqHD7wSEs8",
+				json: "QmVVDqMJTomaHKGHbwbCp99LDELfHsTcBJ8XzvTyoobLxk",
+				name: "Elemenix #416",
+				file: "Elemenix_416.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x66aaa5c9377f9a9010a4bee8dc236ddaed2ca30d95a6f1787f48be8336ee5865",
+				dir: "QmTpitC11uFgFjRtN78BJNyP1BeFyWTNGoFRTKqie5Dw9W",
+				json: "QmVFRDVvz5isFd8GnkhNfTvAkShXojrYfTLnefK4MzMERr",
+				name: "Elemenix #417",
+				file: "Elemenix_417.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x6b664d78501d39577a435c415519f34209fc8cce67b37a41d1b532c096253b15",
+				dir: "QmUd4S7pgnCy96Y7xj8SnegaztGQ6VgVMsVZzCK2mXUX3h",
+				json: "QmVZtowbv2XzAGm2XhTMKWgHQcFcGFtDj4aSXc3Sehwjbi",
+				name: "Elemenix #418",
+				file: "Elemenix_418.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x693db72caba17b0c0bec0eccb808f7e87739d6aec75e0cbeffe28e73b4f45cc8",
+				dir: "QmXk6izh7PsCF8UqQF98NALo28XXVMYHxEVdqXVPMQJcTT",
+				json: "QmVRU6iPPfVtmX4evNYU89QcMYAc88AXporBAJ5j9c6yeF",
+				name: "Elemenix #419",
+				file: "Elemenix_419.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xc7a215defff3ea9eaf59922bf5029e6a56c43cdb8fb84f97c639d0e55a229607",
+				dir: "QmStFywoNn31nBujnkEnUQqDjYDimUNwtYQFcY2yLqey1i",
+				json: "QmbmwC1LVKHxN6N5UpxkSSfXTqw9jbsQySQyG5gq3g2R2N",
+				name: "Elemenix #420",
+				file: "Elemenix_420.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x90ee12b1e6f67c014e8294b5e6af6706cef3100267fa31392936e396a7504b7a",
+				dir: "QmRdMKFzxtJqgerCcDt4KJukWGNHJQ6nCudBeScQ75DPXy",
+				json: "QmY6PyGirhrtYP32xkhAciXkEmzhNUKCtbiNoiHSeVG5sX",
+				name: "Elemenix #421",
+				file: "Elemenix_421.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x6f21da0b62d0b200dd068b193af46bc60959e8c35ac3a2dc53468b3a19ee36ea",
+				dir: "QmcvJiUySVXYW2NEe7W62h5Z96zDMEMLFmhNVfUmntJwyf",
+				json: "QmVpTuJirRjNceiK2dj2xcdbNVxuGpiT6C6qdmBdAVQutM",
+				name: "Elemenix #422",
+				file: "Elemenix_422.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xb7dbeaf50e5da847c4bc466e63859f44639355cd2a192144ca22b1246da2625b",
+				dir: "Qmc7uEbb8Ji7424ZMyQTtAyK6RQbrC35oje9zJxhz9pzwV",
+				json: "QmaiMpCj2SyK7j2vAsvrSRooRtZ1JahKjhis1aoZXuaHNr",
+				name: "Elemenix #423",
+				file: "Elemenix_423.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x2e9fce3645f496270511a916e010a5209f8a137c4b2f58a3c99fea593f6ed2dc",
+				dir: "QmVRATWenenqCJzzF1QMYZLHG7Nv6QteZ9pfb1iCgzqZ2W",
+				json: "QmRUeo9VEW2D3Y5CXW8u3zbovZfTZ51tfifzCzTBfryYBm",
+				name: "Elemenix #424",
+				file: "Elemenix_424.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x84f8aaf36fb6b413c351bb52aeb1fbccbf6d305f4d78a6a78cced9a4a7a29404",
+				dir: "QmTCNMdscfqXdnayWnWZM72Nfm42gDByEKDE8NRqzbDriQ",
+				json: "QmXHiSydTee1qpGqmZMeCigfR5JUmRoZ18XZ5UxL7EvvoD",
+				name: "Elemenix #425",
+				file: "Elemenix_425.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x59118f1f2b7304d440e7bc2dec59345f39e46f056cbd749b59c25d522d1a0613",
+				dir: "QmQdEkcdKCXSvn7vBZXid2K2y3bxnyU4nmrpv5uXSTkH1f",
+				json: "QmULLXLtCNU2XgK8av7At2v1vbCD8Fwi8ZWhsJcqNerzR8",
+				name: "Elemenix #426",
+				file: "Elemenix_426.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x4a0f232d8aeb2d3a6c4b0d909c904d55335a9ed75e0f622c4d8562de3e782d86",
+				dir: "QmY7b9xVkkZxEE6h8Uuc496eAMfrSPj5AjJU9hWbizMpar",
+				json: "QmTKkGRh9dKtB7cby3QzFFC1vUwSgU5NomUUqrZPqCjhhP",
+				name: "Elemenix #427",
+				file: "Elemenix_427.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x4dd0df21f95f601035cad842a46bc547ae861cf5d75c179cf4757e0a22935b3a",
+				dir: "Qmd8j2tMQuietrTUUtfpSh4pgsUw789z36q7XBxNAK1yeK",
+				json: "QmTaQq4HGGtKr4xeqdvMh42srBJH45cFEPgcnrbQnq96wj",
+				name: "Elemenix #428",
+				file: "Elemenix_428.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xded45b03b195d6d6cbf9ec176394c953d1edd525eba196a949a69c36a3cc9f67",
+				dir: "Qmbi5SXcaYAJWZiUTExY79YcXiqQkJK38crbHmzRozDXVt",
+				json: "QmdLV2WDfzpWwniR42iKAfUmTghhU6SoeusTycEs16X5yg",
+				name: "Elemenix #429",
+				file: "Elemenix_429.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xaa820c77f2ea9531b9321fcf0f1954d6b7d33a9a7a1b213e8f52b8b00129523b",
+				dir: "QmeMknUwyBRExwqeuk6kgemycj18KFe7fn2xTturnsSY1i",
+				json: "QmZpF2vGGzpkrVvmk4Jqn5PDK3HqSUhFUy5U9mrG4ZXXvr",
+				name: "Elemenix #430",
+				file: "Elemenix_430.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xb94b3e20bc5e32d00fbd7b2d6c12fcc9f3985634c41d9c44eb1ed96f651caa9c",
+				dir: "QmZ37UB3XVzycHKCjSHyH1vREvRzQVg8Ki3vZjEXjQPfEU",
+				json: "QmaoxgKBxtQoWsjiMtW6rPnZZLhMDb5Y83oVJR9gn4Pfk7",
+				name: "Elemenix #431",
+				file: "Elemenix_431.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x726b83037fa4f76397979af19eb29f9d389b7a6eb84b0d0d62c4dd677fd9e53e",
+				dir: "Qmbs4evz84YZtSASYeokSdn5zMmMXZy67yArGn5z9yA6Gf",
+				json: "QmW3JGg2bCL3nv1ezXqRZn1JSUT6pHjZXWhbtXmRi63n8M",
+				name: "Elemenix #432",
+				file: "Elemenix_432.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x782cadfaf07c22358cd2eb0b55877db34d5f0f0b36ec81bcf5cda1878435465b",
+				dir: "QmP1Uw5HEA8dqwmV1w7V2wYPsDAnuGudPtLsAFCJUWS65U",
+				json: "QmWRm9Yc8HTZoCWVbgwdYHWYWM8k5RKc8WNSNVp6MorQUz",
+				name: "Elemenix #433",
+				file: "Elemenix_433.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xf454145e8d96f0f7f34d4dccef1256dc9ceff79c167b04920c221260ff8bf864",
+				dir: "QmVcpcoB7LHtTjEdTDV3S3EsXgWp5BUtxPtEKmdSHJ5mc5",
+				json: "QmenQYkMcaQriMV7n6MJCs5ixprUshsRfe4afkm17BdtYs",
+				name: "Elemenix #434",
+				file: "Elemenix_434.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x216c22643e56f26bb1b9b608672d5dc57dcfd26ee4fbefeb381ef123b139e866",
+				dir: "QmZupitW28oGipmvuyE4zcNbQaAsNGHdTtZ53JvasWJAf9",
+				json: "QmQb7oF9GegaT7Ap4wCkK2dDQhviE6TSuDDKpy1fxSPwJM",
+				name: "Elemenix #435",
+				file: "Elemenix_435.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x2cdf9793d18f1be0110ad4e76f43c9ef0ccf32e671377acc7d8d42752759fa77",
+				dir: "QmNneMPb24aixXdJ53DXaXBZfuBL6zYSof1UrvTRGNKFts",
+				json: "QmRMpPpRkhpHA2yaRxGSXiYBKteW8e8ShALqhKeybXNtFx",
+				name: "Elemenix #436",
+				file: "Elemenix_436.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x20af6a0894a78b7ce52aedd0c171856f6cd99dc824e11c05fe57c5ff149ad828",
+				dir: "QmPCwEkBUBBz9ysAJdvkgqGmMbVpUdhJEaA6VkXi6yAqqf",
+				json: "QmQYEtkXx6VuSEXM1sKjn1JZxHHxromD8vvCZ6SL9LVMj5",
+				name: "Elemenix #437",
+				file: "Elemenix_437.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xb0ff6395e0669f4da2111eb44f15e1196af5cd102f2e6f92e1ddc8d833239bdc",
+				dir: "QmPe2HqJRqJFUyxjZ5UDADDoC82m8A5V32Doawy5MpbrVW",
+				json: "QmaFaLC1STRSkHzBiQ7Nd6jNf4XDvoToMuNSwgbCof35YP",
+				name: "Elemenix #438",
+				file: "Elemenix_438.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x25caae03bd865a5ee2894790edad88a89d210806a210f17b379fbebca08909d4",
+				dir: "QmbpURJXrHobMze8WZnmQYaoTFZpzzU8AKtaMhNGeeYbgn",
+				json: "QmQtB3aohGGuoQ2rQUHTAaGBxTJ2E53fcxrQzCiee2bRhd",
+				name: "Elemenix #439",
+				file: "Elemenix_439.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xc75b372589cac7d78baa187c7a117e85a4ac5871426ea3f6748dc9d8bdc020fb",
+				dir: "QmVB7fQQDXFPqZTcmBjMdt2ewZ6CfBdz3ae4eVaBB8tbp7",
+				json: "QmbkrWhD45x1FzC2g5gmkVSFpSP8UCX5KoZ16qtcgvGCKL",
+				name: "Elemenix #440",
+				file: "Elemenix_440.png",
+				collection: coll_default,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0xf699f8ab44e21e4adf92f2cfb255cf1a51a45d7ff9e9ab7abcc8565dde70db33",
+				dir: "QmZmTvLbZ6K9tWU1VwdCD7BQg1bTZkQUAUoXttABx2uT6N",
+				json: "QmewHBB8TVaCaf2VNn61mncdWhpjgH6CAgRd8PKVePkb1t",
+				name: "Elemenix #441",
+				file: "Elemenix_441.png",
+				collection: coll_elemenix,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x770acf691ba57cf00f0f02fc0fb2d06d8294229504b5dc571592f58b787c8b3d",
+				dir: "QmYeonvYdmS1FZevG7smuDcdxaWYyVzHRybZ8uiVL72yWw",
+				json: "QmWMLnYus2JbozrMoNE5wC1YrYkFLJxv2djm3GHBbvFLUt",
+				name: "Elemenix #442",
+				file: "Elemenix_442.png",
+				collection: coll_elemenix,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x684051a936e5d7435f1db0e7dbc1c78bc1abf85fb0f23b333a5183c88527af0d",
+				dir: "QmV8XmK4dZpfB8oQ5akLoY5rXJXxcZKKDn1717xVJWaexw",
+				json: "QmVMbzcZ8BJBeQT4rZKarcDAZGt8yLsKH16bvKqNPHKJyi",
+				name: "Elemenix #443",
+				file: "Elemenix_443.png",
+				collection: coll_elemenix,
+				royaltyPercentage: 7,
+				minted: 1
+			}, {
+				id: "0x04c3be5a729127ace5002b77af9e10ad1d9e0c1956035426a06176b833358af2",
+				dir: "QmUpZb8xsyJqcKkujFgQWkttd6k9n4BbZz8JetpN17HqrP",
+				json: "QmNfFTTNdufmKL8dq9CMznFkocdcnmhTG4NSrFhaxSUtdw",
+				name: "Elemenix #444",
+				file: "Elemenix_444.png",
+				collection: coll_elemenix,
 				royaltyPercentage: 7,
 				minted: 1
 			}];
 			
 			my_address="0xd20eff0dee643a226205f5b4ca1f73263cd68ba5";
-			contract_address="0x647d189591c7305bda896ac8c262bd364e1c2c99";
 			
-			updateWithTable("nft_1", my_address, contract_address, chess_font);
-			updateWithTable("nft_2", my_address, contract_address, sk8er_cats);
-			updateWithTable("nft_3", my_address, contract_address, elemenix_nfts);
-			updateWithTable("nft_4", my_address, contract_address, other_nfts);
+			updateWithTable("nft_1", my_address, chess_font);
+			updateWithTable("nft_2", my_address, sk8er_cats);
+			updateWithTable("nft_3", my_address, elemenix_nfts);
+			updateWithTable("nft_4", my_address, other_nfts);
 			
 			function makePinataImgUrl(dir, filename){
 				return ("https://loopring.mypinata.cloud/ipfs/"+dir+"/"+filename);
 			}
 			
-			function makeExplorerUrl(nft_elm, my_address, contract_address){
-				return ("https://explorer.loopring.io/nft/"+my_address+"-0-"+contract_address+"-"+nft_elm.id+"-"+nft_elm.royaltyPercentage);
+			function makeExplorerUrl(nft_elm, my_address){
+				return ("https://explorer.loopring.io/nft/"+my_address+"-0-"+nft_elm.collection+"-"+nft_elm.id+"-"+nft_elm.royaltyPercentage);
 			}
 			
-			function makeLexplorerUrl(nft_elm, my_address, contract_address){
-				return ("https://lexplorer.io/nfts/"+my_address+"-0-"+contract_address+"-"+nft_elm.id+"-"+nft_elm.royaltyPercentage);
+			function makeLexplorerUrl(nft_elm, my_address){
+				return ("https://lexplorer.io/nfts/"+my_address+"-0-"+nft_elm.collection+"-"+nft_elm.id+"-"+nft_elm.royaltyPercentage);
 			}
 			
-			function updateWithTable(dom_id, my_address, contract_address, ntf_arr){
+			function updateWithTable(dom_id, my_address, ntf_arr){
 				var i, len, rtn;
 				
 				rtn="<table cellspacing='0' cellpadding='0'>";
@@ -3598,6 +4734,7 @@
 				rtn+="<th>Name</th>";
 				rtn+="<th>URLs</th>";
 				rtn+="<th>Misc.</th>";
+				rtn+="<th>Royalty %</th>";
 				rtn+="<th>Amount minted</th>";
 				rtn+="</tr>";
 				rtn+="</thead>";
@@ -3612,16 +4749,19 @@
 					rtn+=("<td>"+ntf_arr[i].name+"</td>");
 					
 					rtn+="<td class='alignLeft'><ul>";
-					rtn+=("<li><a href='"+makeExplorerUrl(ntf_arr[i], my_address, contract_address)+"' target='_blank'>Loopring</a></li>");
-					rtn+=("<li><a href='"+makeLexplorerUrl(ntf_arr[i], my_address, contract_address)+"' target='_blank'>Lexplorer</a></li>");
+					rtn+=("<li><a href='"+makeExplorerUrl(ntf_arr[i], my_address)+"' target='_blank'>Loopring</a></li>");
+					rtn+=("<li><a href='"+makeLexplorerUrl(ntf_arr[i], my_address)+"' target='_blank'>Lexplorer</a></li>");
 					rtn+="</ul></td>";
 					
 					rtn+="<td class='alignLeft smallText'><ul>";
 					rtn+=("<li>"+(ntf_arr[i].dir+"/"+ntf_arr[i].file)+"</li>");
 					rtn+=("<li>"+ntf_arr[i].json+"</li>");
+					rtn+=("<li>"+ntf_arr[i].collection+"</li>");
 					rtn+="</ul></td>";
 					
-					rtn+=("<td>"+ntf_arr[i].minted+"</td>");
+					rtn+=("<td>"+ntf_arr[i].royaltyPercentage+"%</td>");
+					
+					rtn+=("<td>x"+ntf_arr[i].minted+"</td>");
 					
 					rtn+=("</tr>");
 				}
