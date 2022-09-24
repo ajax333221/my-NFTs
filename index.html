@@ -47,13 +47,15 @@
 			
 			table th, table td{
 				text-align: center;
-				border: 1px solid #94a164;
+				border: 1px solid #d0d0d0;
 				padding: 10px;
 				margin: 0;
 			}
 			
 			table td img{
-				max-width: 100px;
+				height: 100px;
+				width: 100px;
+				background: #eee;
 			}
 			
 			table td.alignLeft{
@@ -4744,7 +4746,7 @@
 					
 					rtn+=("<td>"+(i+1)+"</td>");
 					
-					rtn+=("<td><img class='d-inline-block align-top' src='"+makePinataImgUrl(ntf_arr[i].dir, ntf_arr[i].file)+"' alt='NFT preview: "+ntf_arr[i].name+"' title='"+ntf_arr[i].name+"' loading='lazy'></td>");
+					rtn+=("<td><img src='"+makePinataImgUrl(ntf_arr[i].dir, ntf_arr[i].file)+"' alt='"+ntf_arr[i].name+"' title='"+ntf_arr[i].name+"' loading='lazy'></td>");
 					
 					rtn+=("<td>"+ntf_arr[i].name+"</td>");
 					
